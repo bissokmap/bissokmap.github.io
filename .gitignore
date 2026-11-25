@@ -1,0 +1,7 @@
+verify.py
+verify-report.json
+shots/
+build/
+__pycache__/
+*.pyc
+.DS_Store
