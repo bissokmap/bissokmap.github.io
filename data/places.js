@@ -1,7 +1,9 @@
-/* 비 오는 날 아이랑 · 雨の日キッズ — 데이터 (인천·부천·김포 31 + 서울 37 = 68곳)
- * 모든 시설 정보는 2026-11-25 기준 공식 홈페이지·공공데이터로 확인한 내용만 수록했습니다.
+/* 비쏙맵 BissokMap · ビッソクマップ — 데이터 (인천·부천·김포·서울 86곳)
+ * 모든 시설 정보는 2026-11-26 기준 공식 홈페이지·공공데이터로 확인한 내용만 수록했습니다.
  * 확인되지 않은 항목은 비워 두었습니다(추정으로 채우지 않음).
- * 좌표는 2026-11-26 카카오맵 장소 좌표 기준으로 68곳 전수 재검증했습니다(구글맵 교차 확인).
+ * themes: activity(액티비티·놀이) / animal(동물·바다·식물) / experience(체험·만들기)
+ *         museum(박물관·전시) / library(도서관·북카페)
+ * 좌표는 카카오맵·구글맵 장소 좌표이며, 상세의 지도 링크는 상호명으로 검색해 정확한 지점을 엽니다.
  */
 window.RKM_PLACES = [
   {
@@ -75,6 +77,9 @@ window.RKM_PLACES = [
       "https://mow.or.kr/kor/sub01_01.do",
       "https://mow.or.kr/kor/sub01_03.do",
       "https://mow.or.kr/kor/sub12_02.do"
+    ],
+    "themes": [
+      "museum"
     ]
   },
   {
@@ -140,6 +145,9 @@ window.RKM_PLACES = [
     "official": "https://www.incheon.go.kr/museum/MU050102",
     "sources": [
       "https://www.incheon.go.kr/museum/MU050102"
+    ],
+    "themes": [
+      "museum"
     ]
   },
   {
@@ -200,6 +208,9 @@ window.RKM_PLACES = [
     "official": "https://www.incheon.go.kr/museum/MU010102",
     "sources": [
       "https://www.incheon.go.kr/museum/MU010102"
+    ],
+    "themes": [
+      "museum"
     ]
   },
   {
@@ -264,6 +275,9 @@ window.RKM_PLACES = [
     "official": "http://www.landing915.com",
     "sources": [
       "https://itour.incheon.go.kr/ssst/ssst/detail.do?cotId=ITD21121413282119411"
+    ],
+    "themes": [
+      "museum"
     ]
   },
   {
@@ -332,6 +346,9 @@ window.RKM_PLACES = [
     "sources": [
       "https://www.ifez.go.kr/journal/now/view.do?jrnl_pst_sn=657",
       "https://imasil.kr/place/10162/"
+    ],
+    "themes": [
+      "library"
     ]
   },
   {
@@ -395,6 +412,9 @@ window.RKM_PLACES = [
     "official": "http://www.yspubliclib.go.kr/",
     "sources": [
       "https://imasil.kr/place/10159/"
+    ],
+    "themes": [
+      "library"
     ]
   },
   {
@@ -455,6 +475,9 @@ window.RKM_PLACES = [
     "official": "https://www.incheon.go.kr/museum/MU040102",
     "sources": [
       "https://www.incheon.go.kr/museum/MU040102"
+    ],
+    "themes": [
+      "museum"
     ]
   },
   {
@@ -514,6 +537,9 @@ window.RKM_PLACES = [
     "sources": [
       "https://www.jcf.or.kr/main/space/museum4.jsp",
       "https://itour.incheon.go.kr/ssst/ssst/detail.do?cotId=ITD21121415141255311"
+    ],
+    "themes": [
+      "museum"
     ]
   },
   {
@@ -572,6 +598,9 @@ window.RKM_PLACES = [
     "official": "https://www.jcf.or.kr/main/space/museum2.jsp",
     "sources": [
       "https://www.jcf.or.kr/main/space/leaflet.jsp"
+    ],
+    "themes": [
+      "museum"
     ]
   },
   {
@@ -632,6 +661,9 @@ window.RKM_PLACES = [
     "official": "https://www.jcf.or.kr/main/space/museum6.jsp",
     "sources": [
       "https://www.jcf.or.kr/main/space/museum6.jsp"
+    ],
+    "themes": [
+      "museum"
     ]
   },
   {
@@ -692,6 +724,9 @@ window.RKM_PLACES = [
     "official": "http://lit.ifac.or.kr",
     "sources": [
       "https://itour.incheon.go.kr/ssst/ssst/detail.do?cotId=ITD21121513320018946"
+    ],
+    "themes": [
+      "museum"
     ]
   },
   {
@@ -750,6 +785,9 @@ window.RKM_PLACES = [
     "official": "https://inartplatform.kr/home/home",
     "sources": [
       "https://itour.incheon.go.kr/ssst/ssst/detail.do?cotId=ITD21121414020850918"
+    ],
+    "themes": [
+      "museum"
     ]
   },
   {
@@ -824,6 +862,9 @@ window.RKM_PLACES = [
     "sources": [
       "https://www.insiseol.or.kr/culture/icsmuseum/introduction/preview.jsp",
       "https://www.insiseol.or.kr/culture/icsmuseum/introduction/facility2.jsp"
+    ],
+    "themes": [
+      "experience"
     ]
   },
   {
@@ -884,6 +925,9 @@ window.RKM_PLACES = [
     "official": "https://museum.gyeyang.go.kr/",
     "sources": [
       "https://itour.incheon.go.kr/ssst/ssst/detail.do?cotId=ITD22010314465548041"
+    ],
+    "themes": [
+      "museum"
     ]
   },
   {
@@ -945,6 +989,9 @@ window.RKM_PLACES = [
     "official": "https://portal.icbp.go.kr/bphm",
     "sources": [
       "https://portal.icbp.go.kr/bphm"
+    ],
+    "themes": [
+      "museum"
     ]
   },
   {
@@ -1006,6 +1053,9 @@ window.RKM_PLACES = [
     "official": "https://www.incheon.go.kr/museum/MU030102",
     "sources": [
       "https://www.incheon.go.kr/museum/MU030102"
+    ],
+    "themes": [
+      "museum"
     ]
   },
   {
@@ -1069,6 +1119,9 @@ window.RKM_PLACES = [
     "official": "https://www.ice.go.kr/safety/",
     "sources": [
       "https://ice.go.kr/safety/cm/cntnts/cntntsView.do?cntntsId=999&mi=10070"
+    ],
+    "themes": [
+      "experience"
     ]
   },
   {
@@ -1142,6 +1195,9 @@ window.RKM_PLACES = [
     "sources": [
       "https://www.incheon.go.kr/IC010101/view?nttNo=2045356",
       "https://www.gyboyuk.go.kr/m5/sub2.asp"
+    ],
+    "themes": [
+      "activity"
     ]
   },
   {
@@ -1204,6 +1260,9 @@ window.RKM_PLACES = [
     "official": "https://www.incheonlib.go.kr/yjs/main.do",
     "sources": [
       "https://www.incheonlib.go.kr/yjs/conts/view.do?mnidx=506"
+    ],
+    "themes": [
+      "library"
     ]
   },
   {
@@ -1274,6 +1333,9 @@ window.RKM_PLACES = [
     "sources": [
       "https://www.robopark.org/ko/contents/RP0101000000.do",
       "https://www.robopark.org/ko/contents/RP0103000000.do"
+    ],
+    "themes": [
+      "experience"
     ]
   },
   {
@@ -1345,6 +1407,10 @@ window.RKM_PLACES = [
     "sources": [
       "https://ecopark.bucheon.go.kr/site/homepage/menu/viewMenu?menuid=149002001",
       "http://ecopark.bucheon.go.kr/site/program/board/faqboard/list?boardtypeid=26708&menuid=149005002"
+    ],
+    "themes": [
+      "animal",
+      "museum"
     ]
   },
   {
@@ -1412,6 +1478,9 @@ window.RKM_PLACES = [
     "sources": [
       "https://www.komacon.kr/comicsmuseum/guide/show_info.asp",
       "https://www.komacon.kr/comicsmuseum/guide/facility.asp"
+    ],
+    "themes": [
+      "museum"
     ]
   },
   {
@@ -1472,6 +1541,9 @@ window.RKM_PLACES = [
     "official": "https://www.bcmuseum.or.kr/ko/pages/tour_guidance",
     "sources": [
       "https://www.bcmuseum.or.kr/ko/pages/tour_guidance"
+    ],
+    "themes": [
+      "museum"
     ]
   },
   {
@@ -1534,6 +1606,9 @@ window.RKM_PLACES = [
     "official": "https://www.bcmuseum.or.kr/ko/pages/tour_guidance",
     "sources": [
       "https://www.bcmuseum.or.kr/ko/pages/tour_guidance"
+    ],
+    "themes": [
+      "museum"
     ]
   },
   {
@@ -1601,6 +1676,9 @@ window.RKM_PLACES = [
     "official": "https://water.bucheon.go.kr/site/homepage/menu/viewMenu?menuid=174003003",
     "sources": [
       "https://www.bucheon.go.kr/site/homepage/menu/viewMenu?menuid=148006001004006"
+    ],
+    "themes": [
+      "museum"
     ]
   },
   {
@@ -1662,6 +1740,9 @@ window.RKM_PLACES = [
     "official": "https://www.astrobucheon.or.kr/sub/sub0201.php",
     "sources": [
       "https://www.astrobucheon.or.kr/sub/sub0201.php"
+    ],
+    "themes": [
+      "experience"
     ]
   },
   {
@@ -1723,6 +1804,9 @@ window.RKM_PLACES = [
     "official": "https://artbunkerb39.org/ko/main/main.html",
     "sources": [
       "https://www.bucheon.go.kr/site/homepage/menu/viewMenu?menuid=172002003"
+    ],
+    "themes": [
+      "museum"
     ]
   },
   {
@@ -1792,6 +1876,9 @@ window.RKM_PLACES = [
     "official": "https://www.playdoci.com/Common/Pop_FeeInfo.aspx",
     "sources": [
       "https://www.playdoci.com/Common/Pop_FeeInfo.aspx"
+    ],
+    "themes": [
+      "activity"
     ]
   },
   {
@@ -1857,6 +1944,9 @@ window.RKM_PLACES = [
     "sources": [
       "https://www.gimpo.go.kr/culture/selectTourCntntsWebView.do?tourNo=1030",
       "https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=175246"
+    ],
+    "themes": [
+      "museum"
     ]
   },
   {
@@ -1924,6 +2014,9 @@ window.RKM_PLACES = [
     "sources": [
       "https://www.gimpo.go.kr/culture/selectTourCntntsWebView.do?tourNo=386",
       "https://www.gcf.or.kr/gart/culture_space/view.do?cult_space_sn=4"
+    ],
+    "themes": [
+      "museum"
     ]
   },
   {
@@ -1984,6 +2077,9 @@ window.RKM_PLACES = [
     "official": "https://www.much.go.kr/cooperation/net/dfj.do",
     "sources": [
       "https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=72924"
+    ],
+    "themes": [
+      "museum"
     ]
   },
   {
@@ -2059,6 +2155,10 @@ window.RKM_PLACES = [
       "https://www.seoulchildrensmuseum.org/reservation/viewAdmission.do",
       "https://www.seoulchildrensmuseum.org/reservation/viewConvenience.do",
       "https://www.sisul.or.kr/open_content/childrenpark/introduce/parking.jsp"
+    ],
+    "themes": [
+      "experience",
+      "activity"
     ]
   },
   {
@@ -2126,6 +2226,9 @@ window.RKM_PLACES = [
     "sources": [
       "https://www.sciencecenter.go.kr/csc/",
       "https://monspecial.tistory.com/533"
+    ],
+    "themes": [
+      "experience"
     ]
   },
   {
@@ -2196,6 +2299,10 @@ window.RKM_PLACES = [
     "sources": [
       "https://nfm.go.kr/home/subIndex/1186.do",
       "https://nfm.go.kr/kids/user/content.do?pageId=PAGE_000000000000003"
+    ],
+    "themes": [
+      "museum",
+      "experience"
     ]
   },
   {
@@ -2263,6 +2370,9 @@ window.RKM_PLACES = [
     "sources": [
       "https://museum.seoul.go.kr/www/guide/vis/infomation.jsp",
       "https://mediahub.seoul.go.kr/archives/2018588"
+    ],
+    "themes": [
+      "museum"
     ]
   },
   {
@@ -2331,6 +2441,9 @@ window.RKM_PLACES = [
     "sources": [
       "https://craftmuseum.seoul.go.kr/chimsm/introduce/",
       "https://korean.visitseoul.net/attractions/KOP038092"
+    ],
+    "themes": [
+      "museum"
     ]
   },
   {
@@ -2399,6 +2512,9 @@ window.RKM_PLACES = [
     "official": "https://craftmuseum.seoul.go.kr",
     "sources": [
       "https://umppa.seoul.go.kr/icare/user/kidsCafe/BD_selectKidsCafeView.do?q_fcltyId=JN251201"
+    ],
+    "themes": [
+      "activity"
     ]
   },
   {
@@ -2464,6 +2580,9 @@ window.RKM_PLACES = [
     "sources": [
       "https://parks.seoul.go.kr/mini/content.do?key=2605260009",
       "https://access.visitkorea.or.kr/ms/detail.do?cotId=d530ec20-4c92-4c8e-9b5b-791090994420"
+    ],
+    "themes": [
+      "animal"
     ]
   },
   {
@@ -2532,6 +2651,9 @@ window.RKM_PLACES = [
     "sources": [
       "https://www.gugak.go.kr/site/homepage/menu/viewMenu?lang=ko&menuid=001004001001",
       "https://academy.gugak.go.kr/common/menu/html/900005002002002/detail.do?currentMenuId=900005002001"
+    ],
+    "themes": [
+      "museum"
     ]
   },
   {
@@ -2599,6 +2721,9 @@ window.RKM_PLACES = [
     "official": "https://nlcy.go.kr/NLCY/contents/C50201000000.do",
     "sources": [
       "https://nlcy.go.kr/NLCY/contents/C50201000000.do"
+    ],
+    "themes": [
+      "library"
     ]
   },
   {
@@ -2664,6 +2789,9 @@ window.RKM_PLACES = [
     "sources": [
       "https://www.songpa.go.kr/child/contents.do?key=3661",
       "https://lib.seoul.go.kr/slibsrch/main?pn=13&searchGuCode=0009"
+    ],
+    "themes": [
+      "library"
     ]
   },
   {
@@ -2732,6 +2860,9 @@ window.RKM_PLACES = [
     "sources": [
       "https://gangdong.go.kr/web/culture/contents/gdc020_010_020",
       "http://sunsa.gangdong.go.kr/site/eng/content/Admission"
+    ],
+    "themes": [
+      "museum"
     ]
   },
   {
@@ -2796,6 +2927,9 @@ window.RKM_PLACES = [
     "sources": [
       "https://baekjemuseum.seoul.go.kr/contents.jsp?mpid=SBM0101000000",
       "https://baekjemuseum.seoul.go.kr/contents.jsp?mpid=SBM0206000000"
+    ],
+    "themes": [
+      "museum"
     ]
   },
   {
@@ -2864,6 +2998,9 @@ window.RKM_PLACES = [
     "sources": [
       "https://culture.gangseo.seoul.kr/gsfc/main/contents.do?menuNo=800108",
       "https://mediahub.seoul.go.kr/archives/2017979"
+    ],
+    "themes": [
+      "museum"
     ]
   },
   {
@@ -2932,6 +3069,9 @@ window.RKM_PLACES = [
     "sources": [
       "https://korean.visitseoul.net/nature/KOP027397",
       "https://www.make2t.kr/2026/11/seoul-botanic-park-greenhouse-hours-parking-2026.html"
+    ],
+    "themes": [
+      "animal"
     ]
   },
   {
@@ -2999,6 +3139,9 @@ window.RKM_PLACES = [
     "official": "https://umppa.seoul.go.kr/icare/user/kidsCafe/BD_selectKidsCafeList.do",
     "sources": [
       "https://umppa.seoul.go.kr/icare/user/kidsCafe/BD_selectKidsCafeView.do?q_fcltyId=GS260401"
+    ],
+    "themes": [
+      "activity"
     ]
   },
   {
@@ -3062,6 +3205,9 @@ window.RKM_PLACES = [
     "official": "https://umppa.seoul.go.kr/icare/user/kidsCafe/BD_selectKidsCafeList.do",
     "sources": [
       "https://umppa.seoul.go.kr/icare/user/kidsCafe/BD_selectKidsCafeView.do?q_fcltyId=YC231201"
+    ],
+    "themes": [
+      "activity"
     ]
   },
   {
@@ -3125,6 +3271,9 @@ window.RKM_PLACES = [
     "official": "https://umppa.seoul.go.kr/icare/user/kidsCafe/BD_selectKidsCafeList.do",
     "sources": [
       "https://umppa.seoul.go.kr/icare/user/kidsCafe/BD_selectKidsCafeView.do?q_fcltyId=SP240401"
+    ],
+    "themes": [
+      "activity"
     ]
   },
   {
@@ -3192,6 +3341,9 @@ window.RKM_PLACES = [
     "official": "https://umppa.seoul.go.kr/icare/user/kidsCafe/BD_selectKidsCafeList.do",
     "sources": [
       "https://umppa.seoul.go.kr/icare/user/kidsCafe/BD_selectKidsCafeView.do?q_fcltyId=DB231001"
+    ],
+    "themes": [
+      "activity"
     ]
   },
   {
@@ -3259,6 +3411,9 @@ window.RKM_PLACES = [
     "sources": [
       "https://science.seoul.go.kr/main",
       "https://science.seoul.go.kr/tmpl/static/info/park?menuId="
+    ],
+    "themes": [
+      "experience"
     ]
   },
   {
@@ -3323,6 +3478,9 @@ window.RKM_PLACES = [
     "sources": [
       "https://museum.seoul.go.kr/sulm/information/viewGuide/viewGuide2th.jsp",
       "https://korean.visitseoul.net/attractions/KOP038243"
+    ],
+    "themes": [
+      "museum"
     ]
   },
   {
@@ -3386,6 +3544,9 @@ window.RKM_PLACES = [
     "official": "https://umppa.seoul.go.kr/icare/user/kidsCafe/BD_selectKidsCafeList.do",
     "sources": [
       "https://umppa.seoul.go.kr/icare/user/kidsCafe/BD_selectKidsCafeView.do?q_fcltyId=GB230601"
+    ],
+    "themes": [
+      "activity"
     ]
   },
   {
@@ -3448,6 +3609,9 @@ window.RKM_PLACES = [
     "official": "https://umppa.seoul.go.kr/icare/user/kidsCafe/BD_selectKidsCafeList.do",
     "sources": [
       "https://umppa.seoul.go.kr/icare/user/kidsCafe/BD_selectKidsCafeView.do?q_fcltyId=GR241001"
+    ],
+    "themes": [
+      "activity"
     ]
   },
   {
@@ -3511,6 +3675,9 @@ window.RKM_PLACES = [
     "official": "https://umppa.seoul.go.kr/icare/user/kidsCafe/BD_selectKidsCafeList.do",
     "sources": [
       "https://umppa.seoul.go.kr/icare/user/kidsCafe/BD_selectKidsCafeView.do?q_fcltyId=YF241001"
+    ],
+    "themes": [
+      "activity"
     ]
   },
   {
@@ -3574,6 +3741,9 @@ window.RKM_PLACES = [
     "official": "https://umppa.seoul.go.kr/icare/user/kidsCafe/BD_selectKidsCafeList.do",
     "sources": [
       "https://umppa.seoul.go.kr/icare/user/kidsCafe/BD_selectKidsCafeView.do?q_fcltyId=JG250301"
+    ],
+    "themes": [
+      "activity"
     ]
   },
   {
@@ -3637,6 +3807,9 @@ window.RKM_PLACES = [
     "official": "https://umppa.seoul.go.kr/icare/user/kidsCafe/BD_selectKidsCafeList.do",
     "sources": [
       "https://umppa.seoul.go.kr/icare/user/kidsCafe/BD_selectKidsCafeView.do?q_fcltyId=DM250304"
+    ],
+    "themes": [
+      "activity"
     ]
   },
   {
@@ -3700,6 +3873,9 @@ window.RKM_PLACES = [
     "official": "https://umppa.seoul.go.kr/icare/user/kidsCafe/BD_selectKidsCafeList.do",
     "sources": [
       "https://umppa.seoul.go.kr/icare/user/kidsCafe/BD_selectKidsCafeView.do?q_fcltyId=SB240903"
+    ],
+    "themes": [
+      "activity"
     ]
   },
   {
@@ -3772,6 +3948,10 @@ window.RKM_PLACES = [
     "sources": [
       "https://www.museum.go.kr/CHILD/contents/C0102000000.do",
       "https://www.museum.go.kr/MUSEUM/contents/C0104040000.do"
+    ],
+    "themes": [
+      "museum",
+      "experience"
     ]
   },
   {
@@ -3846,6 +4026,9 @@ window.RKM_PLACES = [
     "sources": [
       "https://tenten10-1.tistory.com/24",
       "https://www.warmemo.or.kr/kids/"
+    ],
+    "themes": [
+      "museum"
     ]
   },
   {
@@ -3910,6 +4093,9 @@ window.RKM_PLACES = [
     "sources": [
       "https://www.seouledc.or.kr/ko/page/viewing",
       "https://www.seouledc.or.kr/ko/board/complaints?page=1"
+    ],
+    "themes": [
+      "experience"
     ]
   },
   {
@@ -3978,6 +4164,10 @@ window.RKM_PLACES = [
     "sources": [
       "https://namu.sdm.go.kr/web/main/contents/guide_info_fee",
       "https://namu.sdm.go.kr/web/main/contents/guide_info_parking"
+    ],
+    "themes": [
+      "museum",
+      "animal"
     ]
   },
   {
@@ -4051,6 +4241,9 @@ window.RKM_PLACES = [
     "sources": [
       "https://korean.visitseoul.net/area/Eunpyeong-History-Hanok-Museum/KOP44b0tv",
       "https://jeonsimap.com/venue/%EC%9D%80%ED%8F%89%EC%97%AD%EC%82%AC%ED%95%9C%EC%98%A5%EB%B0%95%EB%AC%BC%EA%B4%80/"
+    ],
+    "themes": [
+      "museum"
     ]
   },
   {
@@ -4118,6 +4311,9 @@ window.RKM_PLACES = [
     "official": "https://umppa.seoul.go.kr/icare/user/kidsCafe/BD_selectKidsCafeList.do",
     "sources": [
       "https://umppa.seoul.go.kr/icare/user/kidsCafe/BD_selectKidsCafeView.do?q_fcltyId=MP260701"
+    ],
+    "themes": [
+      "activity"
     ]
   },
   {
@@ -4182,6 +4378,9 @@ window.RKM_PLACES = [
     "sources": [
       "https://jeonsimap.com/venue/%EC%9A%A9%EC%82%B0%EC%97%AD%EC%82%AC%EB%B0%95%EB%AC%BC%EA%B4%80/",
       "https://imasil.kr/place/30/%EC%9A%A9%EC%82%B0%EC%97%AD%EC%82%AC%EB%B0%95%EB%AC%BC%EA%B4%80"
+    ],
+    "themes": [
+      "museum"
     ]
   },
   {
@@ -4246,6 +4445,9 @@ window.RKM_PLACES = [
     "sources": [
       "https://lib.sdm.or.kr/sdmlib/index.do",
       "https://lib.seoul.go.kr/slibsrch/main?defaultLbrry=108"
+    ],
+    "themes": [
+      "library"
     ]
   },
   {
@@ -4310,6 +4512,9 @@ window.RKM_PLACES = [
     "sources": [
       "https://sema.seoul.go.kr/kr/visit/namseoul",
       "https://www.gwanak.go.kr/site/gwanak/05/10504020100002016051205.jsp"
+    ],
+    "themes": [
+      "museum"
     ]
   },
   {
@@ -4373,6 +4578,9 @@ window.RKM_PLACES = [
     "sources": [
       "https://museum.seoul.go.kr/sekm/front/use/see.do?locale=KO",
       "https://korean.visitseoul.net/attractions/Seoul-Museum-of-Korean-Folk-Music/KOPifucgz"
+    ],
+    "themes": [
+      "museum"
     ]
   },
   {
@@ -4441,6 +4649,1324 @@ window.RKM_PLACES = [
     "sources": [
       "https://sema.seoul.go.kr/kr/visit/bukseoul",
       "https://korean.visitseoul.net/exhibition/IEmbraceYou/KOPm8j6gm"
+    ],
+    "themes": [
+      "museum"
+    ]
+  },
+  {
+    "id": "rush-songdo",
+    "region": "songdo",
+    "name": {
+      "ko": "러쉬 트램펄린파크 송도점",
+      "ja": "ラッシュ・トランポリンパーク 松島店"
+    },
+    "addr": {
+      "ko": "인천광역시 연수구 인천타워대로132번길 30 휴먼빌파크 702~705호 (송도동)",
+      "ja": "仁川広域市 延寿区 仁川タワーデロ132番キル 30 ヒューマンビルパーク702〜705号（松島洞）"
+    },
+    "lat": 37.38612,
+    "lng": 126.64358,
+    "hours": {
+      "ko": "화~금 12:00~20:30, 토·일 10:30~21:00 (2시간권 기준, 10분 초과마다 1,000원)",
+      "ja": "火〜金 12:00〜20:30、土日 10:30〜21:00（2時間券、超過10分ごとに1,000ウォン）"
+    },
+    "closed": {
+      "ko": "월요일 정기휴무 (공휴일 영업 여부는 전화 확인)",
+      "ja": "月曜定休（祝日の営業は電話で確認）"
+    },
+    "closedDays": [
+      1
+    ],
+    "fee": {
+      "ko": "36개월~13세 2시간 평일 20,000원·주말 24,000원 / 36개월 미만 14,000·16,000원 / 12개월 미만 무료 / 보호자 3,000~4,000원 (무제한권 별도)",
+      "ja": "36か月〜13歳 2時間 平日20,000ウォン・週末24,000ウォン／36か月未満14,000・16,000ウォン／12か月未満無料／保護者3,000〜4,000ウォン（無制限券は別）"
+    },
+    "cost": "high",
+    "ages": [
+      "infant",
+      "toddler",
+      "kid"
+    ],
+    "themes": [
+      "activity"
+    ],
+    "tags": [
+      "rain",
+      "baby"
+    ],
+    "baby": {
+      "ko": "수유실·기저귀교환대·아기의자가 있습니다. 유모차 대여는 하지 않습니다.",
+      "ja": "授乳室・おむつ替え台・ベビーチェアあり。ベビーカーの貸し出しはありません。"
+    },
+    "parking": {
+      "ko": "건물 주차장 4시간 무료. 만차가 잦아 인근 공영주차장과 캐슬센트럴파크 주차장도 함께 안내받습니다.",
+      "ja": "建物駐車場は4時間無料。満車が多いので近くの公共駐車場やキャッスルセントラルパーク駐車場も案内されます。"
+    },
+    "reserve": {
+      "req": false,
+      "url": "",
+      "note": {
+        "ko": "네이버 예약으로 시간을 지정할 수 있고 현장 구매도 됩니다",
+        "ja": "Naver予約で時間指定が可能。現地購入もできます"
+      }
+    },
+    "desc": {
+      "ko": "트램폴린에 볼풀·정글짐·암벽이 이어지는 송도 실내 놀이시설. 2시간권이 기본이고 36개월 미만 영유아 요금이 따로 있어 형제가 함께 가도 부담이 덜합니다. 컨벤시아와 인천대입구역에서 가깝습니다.",
+      "ja": "トランポリンにボールプール、ジャングルジム、クライミングが続く松島の室内遊び場。2時間券が基本で、36か月未満の幼児料金もあるのできょうだい連れでも安心です。コンベンシアや仁川大入口駅から近い場所にあります。"
+    },
+    "tip": {
+      "ko": "미끄럼 방지 양말이 필수라 챙겨 가세요. 주말 오후는 만차가 잦아 오전이나 평일 낮이 쾌적합니다.",
+      "ja": "滑り止めソックスが必須なので持参しましょう。週末午後は満車になりやすいので、午前か平日昼が快適です。"
+    },
+    "caution": {
+      "ko": "월요일은 정기휴무이고, 36개월 미만은 보호자 없이 입장할 수 없습니다.",
+      "ja": "月曜は定休日。36か月未満は保護者なしでは入場できません。"
+    },
+    "official": "https://map.naver.com/p/search/%EB%9F%AC%EC%89%AC%20%ED%8A%B8%EB%9E%A8%ED%8E%84%EB%A6%B0%ED%8C%8C%ED%81%AC%20%EC%86%A1%EB%8F%84%EC%A0%90",
+    "sources": [
+      "https://mom-mom.net/travel/places/635f735ce69cfb073a6cddb0",
+      "https://songdostory.com/%EC%86%A1%EB%8F%84-%EB%9F%AC%EC%89%AC-%ED%8A%B8%EB%9E%A8%ED%8E%84%EB%A6%B0-%ED%82%A4%EC%A6%88%EC%B9%B4%ED%8E%98-%ED%8C%8C%ED%81%AC-%EC%9A%94%EA%B8%88-%EC%9D%B4%EC%9A%A9-%ED%8C%81/"
+    ]
+  },
+  {
+    "id": "kkumbit",
+    "region": "songdo",
+    "name": {
+      "ko": "연수 꿈빛나래 키즈카페",
+      "ja": "延寿（ヨンス）クムビンナレ・キッズカフェ"
+    },
+    "addr": {
+      "ko": "인천광역시 연수구 센트럴로 418 송도5동 행정복지센터 2층",
+      "ja": "仁川広域市 延寿区 セントラル路418 松島5洞住民センター2階"
+    },
+    "lat": 37.4107,
+    "lng": 126.62882,
+    "hours": {
+      "ko": "화~일 1일 3회차 · 1회 09:30~11:30 / 2회 13:00~15:00 / 3회 15:30~17:30 (회당 2시간)",
+      "ja": "火〜日 1日3回 · 1回09:30〜11:30／2回13:00〜15:00／3回15:30〜17:30（各2時間）"
+    },
+    "closed": {
+      "ko": "월요일(공휴일이면 다음날까지), 1월 1일, 설·추석 연휴 3일",
+      "ja": "月曜（祝日の場合は翌日まで）、1月1日、旧正月・秋夕連休3日"
+    },
+    "closedDays": [
+      1
+    ],
+    "fee": {
+      "ko": "연수구 아이 9,000원·관외 11,000원 / 동반 보호자 1,000원 / 둘째부터 50% (현장 카드만)",
+      "ja": "延寿区の子ども9,000ウォン・区外11,000ウォン／同伴保護者1,000ウォン／2人目から50%（現地カードのみ）"
+    },
+    "cost": "low",
+    "ages": [
+      "toddler",
+      "kid"
+    ],
+    "themes": [
+      "activity"
+    ],
+    "tags": [
+      "rain",
+      "reserve",
+      "hidden"
+    ],
+    "baby": {
+      "ko": "",
+      "ja": ""
+    },
+    "parking": {
+      "ko": "행정복지센터 건물 주차장을 이용합니다. 회차 시작 무렵에는 붐비니 여유를 두고 도착하세요.",
+      "ja": "住民センターの建物駐車場を利用します。回の開始前後は混むので余裕をもって到着しましょう。"
+    },
+    "reserve": {
+      "req": true,
+      "url": "https://booking.naver.com/booking/12/bizes/1173392",
+      "note": {
+        "ko": "매주 수요일 10시에 다음 주(화~일) 예약이 열립니다. 이용 30분 뒤 미방문이면 자동 취소",
+        "ja": "毎週水曜10時に翌週（火〜日）の予約が始まります。利用開始30分後に不在なら自動キャンセル"
+      }
+    },
+    "desc": {
+      "ko": "송도5동 행정복지센터 2층의 200평 공공 키즈카페. 팝드론·클라이밍·그물놀이 등 17가지 놀이기구를 갖춰 3~12세가 2시간씩 놀 수 있고, 요금이 민간 키즈카페의 절반 이하입니다.",
+      "ja": "松島5洞住民センター2階にある約660㎡の公共キッズカフェ。ポップドローンやクライミング、ネット遊びなど17種類の遊具があり、3〜12歳が2時間ずつ遊べます。料金は民間キッズカフェの半額以下です。"
+    },
+    "tip": {
+      "ko": "예약은 네이버에서 하고 결제는 현장 카드로 합니다. 연수구 주민은 등본으로 확인하니 둘째부터 반값 혜택을 챙기세요.",
+      "ja": "予約はNaver、支払いは現地カードです。延寿区民は住民票で確認するので、2人目からの半額特典を忘れずに。"
+    },
+    "caution": {
+      "ko": "3세 이상만 입장할 수 있습니다. 예약 없이 방문하면 자리가 없을 수 있고, 노쇼하면 10일간 예약이 막힙니다.",
+      "ja": "3歳以上のみ入場できます。予約なしだと入れない場合があり、無断キャンセルは10日間予約できません。"
+    },
+    "official": "https://www.yeonsu.go.kr/main/community/kidscafe.asp",
+    "sources": [
+      "https://www.yeonsu.go.kr/main/community/kidscafe.asp",
+      "https://www.ysfsmc.or.kr/introduction/terms13.jsp"
+    ]
+  },
+  {
+    "id": "tablea",
+    "region": "songdo",
+    "name": {
+      "ko": "테이블에이 앤 우쥬 (송도 실내동물원)",
+      "ja": "テーブルA＆ウジュ（松島の室内動物園）"
+    },
+    "addr": {
+      "ko": "인천광역시 연수구 송도과학로16번길 33-4 트리플스트리트 D동 1~2층",
+      "ja": "仁川広域市 延寿区 松島科学路16番キル 33-4 トリプルストリートD棟1〜2階"
+    },
+    "lat": 37.37891,
+    "lng": 126.66304,
+    "hours": {
+      "ko": "매일 10:30~22:00 (입장 마감 21:00)",
+      "ja": "毎日 10:30〜22:00（入場は21:00まで）"
+    },
+    "closed": {
+      "ko": "연중무휴",
+      "ja": "年中無休"
+    },
+    "closedDays": [],
+    "fee": {
+      "ko": "종합권(1·2층) 25,000원 / 층별 단독권 20,000원 / 12개월 미만 무료 / 네이버 예약 시 10~20% 할인",
+      "ja": "総合券（1・2階）25,000ウォン／フロア単独券20,000ウォン／12か月未満無料／Naver予約で10〜20%割引"
+    },
+    "cost": "high",
+    "ages": [
+      "toddler",
+      "kid"
+    ],
+    "themes": [
+      "animal"
+    ],
+    "tags": [
+      "rain",
+      "hidden"
+    ],
+    "baby": {
+      "ko": "수유실과 기저귀교환대가 있고, 1인당 음료 한 잔을 무료로 줍니다.",
+      "ja": "授乳室とおむつ替え台があり、1人1杯ドリンクが無料です。"
+    },
+    "parking": {
+      "ko": "트리플스트리트 D동 지하주차장 5시간 무료 (D동에 주차해야 엘리베이터와 바로 연결)",
+      "ja": "トリプルストリートD棟地下駐車場が5時間無料（D棟に停めるとエレベーターに直結）"
+    },
+    "reserve": {
+      "req": false,
+      "url": "https://booking.naver.com/booking/5/bizes/1330075",
+      "note": {
+        "ko": "현장 구매 가능. 네이버 예약은 방문 1시간 전까지 해야 할인됩니다",
+        "ja": "現地購入可。Naver予約は訪問1時間前までなら割引"
+      }
+    },
+    "desc": {
+      "ko": "트리플스트리트 안 2층짜리 실내동물원. 1층은 알파카·미어캣·라쿤·사막여우·파충류, 2층은 고양이·카피바라·나무늘보와 교감하는 공간입니다. 비 오는 날 아이가 동물을 직접 만지고 먹이를 줄 수 있어 만족도가 높습니다.",
+      "ja": "トリプルストリートにある2フロアの室内動物園。1階はアルパカ・ミーアキャット・アライグマ・フェネック・爬虫類、2階は猫・カピバラ・ナマケモノとふれあえます。雨の日でも動物に触れて餌やりができ人気です。"
+    },
+    "tip": {
+      "ko": "먹이 간식은 입구 키오스크에서 삽니다. 종합권은 시간 제한이 없어 두 층을 천천히 돌 수 있습니다.",
+      "ja": "餌のおやつは入口のキオスクで購入します。総合券は時間制限がなく、2フロアをゆっくり回れます。"
+    },
+    "caution": {
+      "ko": "14세 미만은 보호자와 함께 입장해야 하고, 12개월 미만은 입장할 수 없습니다. 인기 시간대에는 미어캣방 대기가 생깁니다.",
+      "ja": "14歳未満は保護者同伴が必要で、12か月未満は入場できません。混雑時はミーアキャット室に待ち時間ができます。"
+    },
+    "official": "https://www.instagram.com/tablea_zoo",
+    "sources": [
+      "https://booking.naver.com/booking/5/bizes/1330075",
+      "https://travel.makka.co.kr/place/2999180/"
+    ]
+  },
+  {
+    "id": "wildbugs",
+    "region": "oldtown",
+    "name": {
+      "ko": "와일드벅스 곤충탐험대",
+      "ja": "ワイルドバグス 昆虫探検隊"
+    },
+    "addr": {
+      "ko": "인천광역시 중구 월미로 222 101~127호 (북성동1가)",
+      "ja": "仁川広域市 中区 月尾路222 101〜127号"
+    },
+    "lat": 37.47639,
+    "lng": 126.59924,
+    "hours": {
+      "ko": "월·수~금 10:00~18:00, 토·일 10:00~19:00",
+      "ja": "月・水〜金 10:00〜18:00、土日 10:00〜19:00"
+    },
+    "closed": {
+      "ko": "화요일 정기휴무",
+      "ja": "火曜定休"
+    },
+    "closedDays": [
+      2
+    ],
+    "fee": {
+      "ko": "성인 9,000원 / 24개월~19세 2시간 18,000원·종일 28,000원 / 24개월 미만 무료 / 세 자녀 이상 50%",
+      "ja": "大人9,000ウォン／24か月〜19歳 2時間18,000ウォン・終日28,000ウォン／24か月未満無料／3人以上の子どもは50%"
+    },
+    "cost": "high",
+    "ages": [
+      "toddler",
+      "kid"
+    ],
+    "themes": [
+      "animal",
+      "experience"
+    ],
+    "tags": [
+      "rain",
+      "baby",
+      "hidden"
+    ],
+    "baby": {
+      "ko": "수유실·기저귀교환대·내부 화장실이 있습니다. 유모차는 반입할 수 없습니다.",
+      "ja": "授乳室・おむつ替え台・館内トイレあり。ベビーカーは持ち込めません。"
+    },
+    "parking": {
+      "ko": "건물 지하주차장 3시간 무료. 주말에는 8부두 주차장에 대고 무료 셔틀을 타는 편이 빠릅니다.",
+      "ja": "建物地下駐車場は3時間無料。週末は8埠頭の駐車場に停めて無料シャトルを使うほうが早いです。"
+    },
+    "reserve": {
+      "req": false,
+      "url": "",
+      "note": {
+        "ko": "네이버 예약 또는 현장 구매",
+        "ja": "Naver予約または現地購入"
+      }
+    },
+    "desc": {
+      "ko": "월미도 곤충·동물 체험관. 퀴즈 미션을 풀며 곤충과 파충류, 토끼·기니피그·거북이를 보고, 하루 세 번(11·13·15시) 동물 교감 시간이 열립니다. 마지막에 아이 이름이 들어간 대원증서를 받습니다.",
+      "ja": "月尾島の昆虫・動物体験館。クイズミッションを解きながら昆虫や爬虫類、ウサギ・モルモット・カメを見て、1日3回（11・13・15時）動物とのふれあい時間があります。最後に子どもの名前入り隊員証をもらえます。"
+    },
+    "tip": {
+      "ko": "파충류를 만진 뒤 바로 씻을 수 있는 세면대가 곳곳에 있습니다. '비밀기지'는 꽤 어두워 랜턴을 들고 들어갑니다.",
+      "ja": "爬虫類に触れたあとすぐ洗える手洗い場が各所にあります。「秘密基地」はかなり暗く、懐中電灯を持って入ります。"
+    },
+    "caution": {
+      "ko": "화요일은 휴무입니다. 어두운 곳을 무서워하는 아이는 비밀기지를 건너뛰어도 됩니다.",
+      "ja": "火曜は休みです。暗い場所が苦手な子どもは秘密基地を飛ばしても大丈夫です。"
+    },
+    "official": "https://map.naver.com/p/search/%EC%99%80%EC%9D%BC%EB%93%9C%EB%B2%85%EC%8A%A4%20%EA%B3%A4%EC%B6%A9%ED%83%90%ED%97%98%EB%8C%80",
+    "sources": [
+      "https://mom-mom.net/travel/places/687786f929c84adaf8a5aee2"
+    ]
+  },
+  {
+    "id": "wonderbox",
+    "region": "yeongjong",
+    "name": {
+      "ko": "파라다이스시티 원더박스",
+      "ja": "パラダイスシティ ワンダーボックス"
+    },
+    "addr": {
+      "ko": "인천광역시 영종구 영종해안남로321번길 186 파라다이스시티",
+      "ja": "仁川広域市 永宗区 永宗海岸南路321番キル186 パラダイスシティ"
+    },
+    "lat": 37.43741,
+    "lng": 126.45555,
+    "hours": {
+      "ko": "매일 11:00~19:00 (티켓 발권은 18:00까지)",
+      "ja": "毎日 11:00〜19:00（チケット発券は18:00まで）"
+    },
+    "closed": {
+      "ko": "연중무휴",
+      "ja": "年中無休"
+    },
+    "closedDays": [],
+    "fee": {
+      "ko": "1일 자유이용권 성인 28,000원 / 어린이(37개월~12세) 23,000원 / 36개월 이하 무료 · 카니발 게임 별도",
+      "ja": "1日フリーパス 大人28,000ウォン／子ども（37か月〜12歳）23,000ウォン／36か月以下無料・カーニバルゲームは別料金"
+    },
+    "cost": "high",
+    "ages": [
+      "toddler",
+      "kid"
+    ],
+    "themes": [
+      "activity"
+    ],
+    "tags": [
+      "rain",
+      "baby",
+      "stroller"
+    ],
+    "baby": {
+      "ko": "수유실·의무실·물품보관함이 있습니다.",
+      "ja": "授乳室・医務室・ロッカーがあります。"
+    },
+    "parking": {
+      "ko": "파라다이스시티 주차장 무료",
+      "ja": "パラダイスシティ駐車場は無料"
+    },
+    "reserve": {
+      "req": false,
+      "url": "https://www.p-city.com/front/wonderbox/overview",
+      "note": {
+        "ko": "현장·공식 홈페이지 구매. 당일 취소가 되지 않으니 날짜를 확인하세요",
+        "ja": "現地・公式サイトで購入。当日キャンセル不可なので日付を確認"
+      }
+    },
+    "desc": {
+      "ko": "'밤의 유원지'를 테마로 한 실내 테마파크. 티컵·범퍼카·해피스윙 같은 놀이기구와 카니발 게임, 퍼포먼스가 한 건물에서 이어집니다. 날씨와 상관없이 하루를 보낼 수 있고 주차가 무료입니다.",
+      "ja": "「夜の遊園地」をテーマにした屋内テーマパーク。ティーカップやバンパーカー、ハッピースイングなどの乗り物とカーニバルゲーム、パフォーマンスが1つの建物で楽しめます。天候に関係なく1日過ごせ、駐車場は無料です。"
+    },
+    "tip": {
+      "ko": "카니발 게임은 자유이용권에 포함되지 않아 별도 티켓을 삽니다. 36개월 이하는 증빙서류를 챙기면 무료입니다.",
+      "ja": "カーニバルゲームはフリーパスに含まれず別チケットが必要。36か月以下は証明書類を持参すれば無料です。"
+    },
+    "caution": {
+      "ko": "놀이기구마다 키 제한이 있어 100cm 미만 아이가 탈 수 있는 기구는 적습니다.",
+      "ja": "乗り物ごとに身長制限があり、100cm未満の子どもが乗れるものは限られます。"
+    },
+    "official": "https://www.p-city.com/front/wonderbox/overview",
+    "sources": [
+      "https://www.yeongjong.go.kr/tour/regional_tour/yongyoo/view.do?trspt_sn=192",
+      "https://www.p-city.com/front/wonderbox/overview"
+    ]
+  },
+  {
+    "id": "bounce",
+    "region": "yeongjong",
+    "name": {
+      "ko": "바운스 더퍼스트 인스파이어 리조트 센터",
+      "ja": "バウンス・ザ・ファースト インスパイア・リゾートセンター"
+    },
+    "addr": {
+      "ko": "인천광역시 중구 공항문화로 127 인스파이어몰 1층 E-02호",
+      "ja": "仁川広域市 中区 空港文化路127 インスパイアモール1階 E-02号"
+    },
+    "lat": 37.46609,
+    "lng": 126.38716,
+    "hours": {
+      "ko": "매일 10:00~22:00",
+      "ja": "毎日 10:00〜22:00"
+    },
+    "closed": {
+      "ko": "설·추석 당일",
+      "ja": "旧正月・秋夕の当日"
+    },
+    "closedDays": [],
+    "fee": {
+      "ko": "2시간 28,000원(인천시민·투숙객 25,000원) / 앱 예매 평일 22,400·주말 26,600원 / 4시간 43,000원 / 20:30 이후 라스트패스 14,000원 / 보호자 10,000원(음료 교환권 포함)",
+      "ja": "2時間28,000ウォン（仁川市民・宿泊者25,000ウォン）／アプリ予約 平日22,400・週末26,600ウォン／4時間43,000ウォン／20:30以降ラストパス14,000ウォン／保護者10,000ウォン（ドリンク券付き）"
+    },
+    "cost": "high",
+    "ages": [
+      "toddler",
+      "kid"
+    ],
+    "themes": [
+      "activity"
+    ],
+    "tags": [
+      "rain",
+      "stroller"
+    ],
+    "baby": {
+      "ko": "",
+      "ja": ""
+    },
+    "parking": {
+      "ko": "인스파이어몰 주차장. 4시간 이용 시 당일 주차를 지원합니다.",
+      "ja": "インスパイアモール駐車場。4時間利用で当日駐車を支援します。"
+    },
+    "reserve": {
+      "req": false,
+      "url": "https://www.vaunce.co.kr/center/inspire",
+      "note": {
+        "ko": "현장 구매 가능. 바운스 앱에서 미리 사면 더 쌉니다",
+        "ja": "現地購入可。バウンスアプリで事前購入すると安くなります"
+      }
+    },
+    "desc": {
+      "ko": "인스파이어 리조트 몰 1층의 대형 트램폴린 파크. 티켓 한 장으로 21가지 어트랙션을 시간 안에 모두 이용하고, 기구마다 따로 내는 요금이 없습니다. 키 80cm부터 들어갈 수 있어 어린 동생도 함께 갈 수 있습니다.",
+      "ja": "インスパイア・リゾートのモール1階にある大型トランポリンパーク。チケット1枚で21種類のアトラクションを時間内にすべて利用でき、器具ごとの追加料金はありません。身長80cmから入場できるので小さいきょうだいも一緒に行けます。"
+    },
+    "tip": {
+      "ko": "인천시민 할인과 앱 예매 할인을 비교해 보세요. 음식 15,000원 이상 결제하면 이용 시간 30분을 더 줍니다.",
+      "ja": "仁川市民割引とアプリ予約割引を比べましょう。フード15,000ウォン以上の支払いで利用時間が30分延びます。"
+    },
+    "caution": {
+      "ko": "80cm 미만은 입장할 수 없고 100cm 미만은 보호자 동반이 필요합니다. 미끄럼 방지 양말은 필수입니다.",
+      "ja": "80cm未満は入場不可、100cm未満は保護者同伴が必要です。滑り止めソックスは必須です。"
+    },
+    "official": "https://www.vaunce.co.kr/center/inspire",
+    "sources": [
+      "https://www.vaunce.co.kr/center/inspire",
+      "https://mom-mom.net/travel/places/66f0cb175d76893811f40ff4"
+    ]
+  },
+  {
+    "id": "ice",
+    "region": "songdo",
+    "name": {
+      "ko": "선학국제빙상경기장",
+      "ja": "ソンハク国際アイスリンク"
+    },
+    "addr": {
+      "ko": "인천광역시 연수구 경원대로 526 (선학동)",
+      "ja": "仁川広域市 延寿区 キョンウォン大路526（ソンハク洞）"
+    },
+    "lat": 37.43262,
+    "lng": 126.70348,
+    "hours": {
+      "ko": "평일 14:15~18:00 (휴게 16:00~16:15), 주말·공휴일 12:00~18:00 (휴게 13:45~14:00 / 15:45~16:00)",
+      "ja": "平日14:15〜18:00（休憩16:00〜16:15）、週末・祝日12:00〜18:00（休憩13:45〜14:00／15:45〜16:00）"
+    },
+    "closed": {
+      "ko": "설·추석 연휴 (대회·행사 기간에는 일반 개방이 줄어듭니다)",
+      "ja": "旧正月・秋夕連休（大会・行事期間は一般開放が減ります）"
+    },
+    "closedDays": [],
+    "fee": {
+      "ko": "성인 4,000원 / 청소년 3,500원 / 어린이 3,000원 · 스케이트 대여 3,000원(3시간)",
+      "ja": "大人4,000ウォン／中高生3,500ウォン／子ども3,000ウォン・スケート貸出3,000ウォン（3時間）"
+    },
+    "cost": "low",
+    "ages": [
+      "toddler",
+      "kid"
+    ],
+    "themes": [
+      "activity"
+    ],
+    "tags": [
+      "rain",
+      "hidden"
+    ],
+    "baby": {
+      "ko": "",
+      "ja": ""
+    },
+    "parking": {
+      "ko": "경기장 주차장이 있습니다.",
+      "ja": "リンクの駐車場があります。"
+    },
+    "reserve": {
+      "req": false,
+      "url": "https://seonhakicerink.or.kr/",
+      "note": {
+        "ko": "예약 없이 입장. 단체·대관 일정은 전화(032-821-5723)로 확인",
+        "ja": "予約不要。団体・貸切の予定は電話（032-821-5723）で確認"
+      }
+    },
+    "desc": {
+      "ko": "인천 유일의 국제규격 실내 빙상장. 일반인 자유 스케이팅 시간이 정해져 있어 아이가 스케이트를 처음 배우기에 좋고, 관람석에서 한 사람이 쉬며 볼 수 있습니다.",
+      "ja": "仁川で唯一の国際規格の屋内リンク。一般向けの自由滑走時間が決まっていて、子どもがスケートを初めて習うのに向いています。観覧席から交代で見ることもできます。"
+    },
+    "tip": {
+      "ko": "입장권과 대여료가 따로이고 3시간이 지나면 시간당 1,500원이 붙습니다. 장갑을 챙기면 손이 시리지 않습니다.",
+      "ja": "入場券と貸出料は別で、3時間を過ぎると1時間ごとに1,500ウォン。手袋があると手が冷えません。"
+    },
+    "caution": {
+      "ko": "평일은 오후에만 열고 휴게시간에는 링크를 비웁니다. 아이 스케이트 사이즈가 있는지 미리 전화로 확인하세요.",
+      "ja": "平日は午後のみで、休憩時間はリンクを空けます。子どものスケートのサイズがあるか事前に電話で確認しましょう。"
+    },
+    "official": "https://seonhakicerink.or.kr/",
+    "sources": [
+      "https://seonhakicerink.or.kr/",
+      "https://itour.incheon.go.kr/ssst/ssst/detail.do?cotId=APD23120710004678941"
+    ]
+  },
+  {
+    "id": "ballbear",
+    "region": "bucheon",
+    "name": {
+      "ko": "볼베어파크 부천",
+      "ja": "ボールベアパーク 富川"
+    },
+    "addr": {
+      "ko": "경기도 부천시 원미구 조마루로 2 웅진플레이도시 2층 (상동)",
+      "ja": "京畿道 富川市 遠美区 チョマル路2 ウンジンプレイシティ2階（サンドン）"
+    },
+    "lat": 37.49997,
+    "lng": 126.74423,
+    "hours": {
+      "ko": "매일 11:00~19:00 (입장 마감 18:00)",
+      "ja": "毎日 11:00〜19:00（入場は18:00まで）"
+    },
+    "closed": {
+      "ko": "월요일 정기휴무(공휴일 운영 여부 확인), 설·추석 당일",
+      "ja": "月曜定休（祝日の営業は要確認）、旧正月・秋夕の当日"
+    },
+    "closedDays": [
+      1
+    ],
+    "fee": {
+      "ko": "소인(36개월~17세) 종일 평일 24,000원·주말 28,000원 / 15시 이후 20,000·24,000원 / 영유아(12~36개월) 12,000원 / 보호자 9,000원 / 12개월 미만 무료",
+      "ja": "小人（36か月〜17歳）終日 平日24,000ウォン・週末28,000ウォン／15時以降20,000・24,000ウォン／幼児（12〜36か月）12,000ウォン／保護者9,000ウォン／12か月未満無料"
+    },
+    "cost": "high",
+    "ages": [
+      "infant",
+      "toddler",
+      "kid"
+    ],
+    "themes": [
+      "activity"
+    ],
+    "tags": [
+      "rain",
+      "baby"
+    ],
+    "baby": {
+      "ko": "베이비존·수유실·기저귀교환대가 있습니다. 미끄럼 방지 양말은 필수입니다.",
+      "ja": "ベビーゾーン・授乳室・おむつ替え台あり。滑り止めソックスは必須です。"
+    },
+    "parking": {
+      "ko": "웅진플레이도시 주차장 3시간 무료(차량번호 등록). 식음료를 이용하면 1시간이 더 붙습니다.",
+      "ja": "ウンジンプレイシティ駐車場は3時間無料（車番登録）。飲食利用で1時間追加されます。"
+    },
+    "reserve": {
+      "req": false,
+      "url": "https://www.playdoci.com/Ballbear/info_fee.aspx",
+      "note": {
+        "ko": "온라인 예매처 할인권이 있습니다. 퇴장 후 재입장은 되지 않습니다",
+        "ja": "オンライン割引券あり。退場後の再入場はできません"
+      }
+    },
+    "desc": {
+      "ko": "웅진플레이도시 2층의 4,000평 규모 실내 스포츠 테마파크. 대형 슬라이드와 볼풀·정글짐에 축구·야구·농구 존, 러쉬 트램폴린까지 있고 시간 제한 없는 종일권입니다.",
+      "ja": "ウンジンプレイシティ2階にある約13,000㎡の屋内スポーツテーマパーク。大型スライドにボールプール、ジャングルジム、サッカー・野球・バスケのゾーン、ラッシュのトランポリンまであり、時間制限なしの終日券です。"
+    },
+    "tip": {
+      "ko": "오후 3시 이후 입장권이 더 쌉니다. 퇴장 후 재입장이 안 되니 점심 시간을 미리 정하세요.",
+      "ja": "15時以降の入場券が安くなります。再入場できないので昼食の時間を先に決めましょう。"
+    },
+    "caution": {
+      "ko": "월요일은 정기휴무입니다. VR·아케이드·인형뽑기는 입장권과 별도 결제입니다.",
+      "ja": "月曜は定休日。VR・アーケード・クレーンゲームは入場券と別払いです。"
+    },
+    "official": "https://www.playdoci.com/Ballbear/info_fee.aspx",
+    "sources": [
+      "https://www.playdoci.com/Ballbear/info_fee.aspx",
+      "https://m.blog.naver.com/travstory/224249973167"
+    ]
+  },
+  {
+    "id": "playaqua",
+    "region": "bucheon",
+    "name": {
+      "ko": "플레이 아쿠아리움 부천",
+      "ja": "プレイアクアリウム 富川"
+    },
+    "addr": {
+      "ko": "경기도 부천시 원미구 조마루로 2 웅진플레이도시 내 (상동)",
+      "ja": "京畿道 富川市 遠美区 チョマル路2 ウンジンプレイシティ内（サンドン）"
+    },
+    "lat": 37.5,
+    "lng": 126.74413,
+    "hours": {
+      "ko": "평일 10:00~18:00 (입장 마감 17:00), 주말·공휴일 10:00~19:00 (18:00)",
+      "ja": "平日10:00〜18:00（入場は17:00まで）、週末・祝日10:00〜19:00（18:00まで）"
+    },
+    "closed": {
+      "ko": "연중무휴",
+      "ja": "年中無休"
+    },
+    "closedDays": [],
+    "fee": {
+      "ko": "성인 30,000원 / 청소년 27,000원 / 어린이 25,000원 · 보호자 1명 결제 시 36개월 미만 1명 무료(증빙) · 온라인 할인권 있음",
+      "ja": "大人30,000ウォン／中高生27,000ウォン／子ども25,000ウォン・保護者1人の支払いで36か月未満1人無料（証明）・オンライン割引券あり"
+    },
+    "cost": "high",
+    "ages": [
+      "toddler",
+      "kid"
+    ],
+    "themes": [
+      "animal"
+    ],
+    "tags": [
+      "rain",
+      "stroller"
+    ],
+    "baby": {
+      "ko": "",
+      "ja": ""
+    },
+    "parking": {
+      "ko": "웅진플레이도시 주차장 2시간 무료(출차 전 무인정산). 이후 30분당 2,000원",
+      "ja": "ウンジンプレイシティ駐車場は2時間無料（出庫前に精算）。以降30分ごと2,000ウォン"
+    },
+    "reserve": {
+      "req": false,
+      "url": "http://playaquarium.co.kr",
+      "note": {
+        "ko": "현장 구매 가능. 온라인 예매처 할인권이 더 쌉니다",
+        "ja": "現地購入可。オンライン割引券のほうが安いです"
+      }
+    },
+    "desc": {
+      "ko": "2,000평 규모의 체험형 아쿠아리움. 450여 종 6,700여 마리의 바다 생물과 파충류·육상동물을 함께 보고, 인어 공연과 먹이 주기 체험을 즐길 수 있습니다.",
+      "ja": "約6,600㎡の体験型アクアリウム。450種6,700匹あまりの海の生き物と爬虫類・陸上動物を一緒に見られ、人魚ショーや餌やり体験も楽しめます。"
+    },
+    "tip": {
+      "ko": "관람은 1시간 30분~2시간이면 충분합니다. 주차 할인은 출차 전에 무인정산기에서 등록해야 합니다.",
+      "ja": "観覧は1時間30分〜2時間で十分です。駐車割引は出庫前に精算機で登録が必要です。"
+    },
+    "caution": {
+      "ko": "36개월 미만 무료 입장은 보호자 1명당 1명이고 나이 증빙서류가 필요합니다.",
+      "ja": "36か月未満の無料入場は保護者1人につき1人で、年齢の証明書類が必要です。"
+    },
+    "official": "http://playaquarium.co.kr",
+    "sources": [
+      "https://gnews.gg.go.kr/news/news_detail.do?number=202502051108337234C049&s_code=C049",
+      "https://www.playdoci.com/aquarium/info_fee.aspx"
+    ]
+  },
+  {
+    "id": "playworld",
+    "region": "bucheon",
+    "name": {
+      "ko": "플레이월드 부천점",
+      "ja": "プレイワールド 富川店"
+    },
+    "addr": {
+      "ko": "경기도 부천시 원미구 신흥로 150-1 위브더스테이트 8동 B101호 (중동)",
+      "ja": "京畿道 富川市 遠美区 シンフン路150-1 ウィブ・ザ・ステート8棟 B101号（チュンドン）"
+    },
+    "lat": 37.49784,
+    "lng": 126.77885,
+    "hours": {
+      "ko": "매일 10:30~20:00 (어트랙션은 19:00 마감)",
+      "ja": "毎日 10:30〜20:00（アトラクションは19:00終了）"
+    },
+    "closed": {
+      "ko": "연중무휴",
+      "ja": "年中無休"
+    },
+    "closedDays": [],
+    "fee": {
+      "ko": "어린이 종일 주중 23,000원·주말 28,000원 / 15시 이후 20,000·25,000원 / 12개월 미만 10,000원 / 보호자 7,000원",
+      "ja": "子ども終日 平日23,000ウォン・週末28,000ウォン／15時以降20,000・25,000ウォン／12か月未満10,000ウォン／保護者7,000ウォン"
+    },
+    "cost": "high",
+    "ages": [
+      "infant",
+      "toddler",
+      "kid"
+    ],
+    "themes": [
+      "activity"
+    ],
+    "tags": [
+      "rain"
+    ],
+    "baby": {
+      "ko": "",
+      "ja": ""
+    },
+    "parking": {
+      "ko": "위브더스테이트 상가 주차장 5시간 무료(사전 등록). 만차 시 부천필그린타워를 이용합니다.",
+      "ja": "ウィブ・ザ・ステートの商業駐車場が5時間無料（事前登録）。満車時は富川ピルグリーンタワーを利用します。"
+    },
+    "reserve": {
+      "req": false,
+      "url": "https://playworld.co.kr",
+      "note": {
+        "ko": "현장 키오스크 발권. 온라인 예매는 일시 중단된 적이 있어 현장 안내를 확인",
+        "ja": "現地キオスクで発券。オンライン予約は一時停止されたことがあるので現地案内を確認"
+      }
+    },
+    "desc": {
+      "ko": "약 700평 규모의 대형 키즈카페. 포크레인·범퍼카·짚라인·트램폴린에 오락실과 노래방까지 무료로 쓸 수 있어 '작은 놀이공원' 같습니다. 종일권이라 하루를 보낼 수 있습니다.",
+      "ja": "約2,300㎡の大型キッズカフェ。パワーショベルやバンパーカー、ジップライン、トランポリンにゲームコーナーやカラオケまで無料で使え、「小さな遊園地」のようです。終日券なので1日遊べます。"
+    },
+    "tip": {
+      "ko": "어트랙션은 19시에 마감하니 오전에 가서 시간표를 먼저 보세요. 평일 낮은 사람이 적어 여러 번 탈 수 있습니다.",
+      "ja": "アトラクションは19時に終わるので午前に行ってタイムテーブルを確認しましょう。平日昼は空いていて何度も乗れます。"
+    },
+    "caution": {
+      "ko": "15시 이후 입장권이 싸지만 어트랙션이 끝나는 시간을 함께 계산해야 합니다.",
+      "ja": "15時以降の券は安いですが、アトラクション終了時間も考えて選びましょう。"
+    },
+    "official": "https://playworld.co.kr",
+    "sources": [
+      "https://playworld.co.kr/index",
+      "https://m.blog.naver.com/klklkl0910/224384451516"
+    ]
+  },
+  {
+    "id": "monsterrium",
+    "region": "gimpo",
+    "name": {
+      "ko": "몬스터리움",
+      "ja": "モンステリウム（金浦の室内動物園）"
+    },
+    "addr": {
+      "ko": "경기도 김포시 대곶면 대명항1로 52",
+      "ja": "京畿道 金浦市 大串面 大明港1路52"
+    },
+    "lat": 37.64283,
+    "lng": 126.54608,
+    "hours": {
+      "ko": "평일 11:00~19:00, 주말·공휴일 10:00~19:00 (입장 마감 18:30)",
+      "ja": "平日11:00〜19:00、週末・祝日10:00〜19:00（入場は18:30まで）"
+    },
+    "closed": {
+      "ko": "연중무휴",
+      "ja": "年中無休"
+    },
+    "closedDays": [],
+    "fee": {
+      "ko": "평일 15,900원 / 주말·공휴일 18,900원 (대인·소인 동일) / 24개월 미만 무료 / 세 자녀 유료 입장 시 1명 무료",
+      "ja": "平日15,900ウォン／週末・祝日18,900ウォン（大人・子ども同額）／24か月未満無料／子ども3人の支払いで1人無料"
+    },
+    "cost": "high",
+    "ages": [
+      "toddler",
+      "kid"
+    ],
+    "themes": [
+      "animal"
+    ],
+    "tags": [
+      "rain",
+      "hidden"
+    ],
+    "baby": {
+      "ko": "",
+      "ja": ""
+    },
+    "parking": {
+      "ko": "무료 주차장이 넓게 있습니다.",
+      "ja": "無料駐車場が広くあります。"
+    },
+    "reserve": {
+      "req": false,
+      "url": "https://www.instagram.com/monsterrium/",
+      "note": {
+        "ko": "현장 구매 가능. 온라인 예매가 더 쌉니다",
+        "ja": "現地購入可。オンライン予約のほうが安いです"
+      }
+    },
+    "desc": {
+      "ko": "대명항 옆의 실내 아쿠아리움 겸 동물 체험관. 피라루크 같은 대형 담수어와 파충류·갑각류를 보고, 잉어·거북이·토끼·알파카 먹이 주기를 할 수 있습니다.",
+      "ja": "大明港の隣にある屋内アクアリウム兼動物体験館。ピラルクのような大型淡水魚や爬虫類・甲殻類を見て、鯉・カメ・ウサギ・アルパカの餌やりができます。"
+    },
+    "tip": {
+      "ko": "먹이 바구니는 현장에서 따로 삽니다(5,000원부터). 피라루크 쇼 시간은 공식 인스타그램에서 확인하세요.",
+      "ja": "餌のバスケットは現地で別購入（5,000ウォンから）。ピラルクのショー時間は公式インスタグラムで確認しましょう。"
+    },
+    "caution": {
+      "ko": "대형 아쿠아리움을 기대하면 아쉬울 수 있는 소규모 시설입니다. 파충류관에서는 직접 만져 볼 수 있습니다.",
+      "ja": "大型アクアリウムを期待すると物足りない小規模施設です。爬虫類館では直接触れることができます。"
+    },
+    "official": "https://www.instagram.com/monsterrium/",
+    "sources": [
+      "https://www.i-rang.net/place/monsterrium",
+      "https://monspecial.tistory.com/538"
+    ]
+  },
+  {
+    "id": "coexaqua",
+    "region": "seoul-gangnam",
+    "name": {
+      "ko": "씨라이프 코엑스 아쿠아리움",
+      "ja": "シーライフ COEX アクアリウム"
+    },
+    "addr": {
+      "ko": "서울특별시 강남구 영동대로 513 스타필드 코엑스몰 B1 (삼성동)",
+      "ja": "ソウル特別市 江南区 永東大路513 スターフィールドCOEXモールB1（サムソン洞）"
+    },
+    "lat": 37.51341,
+    "lng": 127.05848,
+    "hours": {
+      "ko": "매일 10:00~20:00 (입장 마감 19:00)",
+      "ja": "毎日 10:00〜20:00（入場は19:00まで）"
+    },
+    "closed": {
+      "ko": "연중무휴",
+      "ja": "年中無休"
+    },
+    "closedDays": [],
+    "fee": {
+      "ko": "성인·청소년(13세 이상) 35,000원 / 어린이(36개월~12세) 31,000원 / 36개월 미만 무료 · 공식 온라인 예매 28,000·25,000원부터",
+      "ja": "大人・中高生（13歳以上）35,000ウォン／子ども（36か月〜12歳）31,000ウォン／36か月未満無料・公式オンライン予約は28,000・25,000ウォンから"
+    },
+    "cost": "high",
+    "ages": [
+      "toddler",
+      "kid"
+    ],
+    "themes": [
+      "animal"
+    ],
+    "tags": [
+      "rain",
+      "stroller"
+    ],
+    "baby": {
+      "ko": "",
+      "ja": ""
+    },
+    "parking": {
+      "ko": "코엑스몰 주차장 4시간 4,800원 (아쿠아리움 안내 기기에 차량번호 등록 필요)",
+      "ja": "COEXモール駐車場は4時間4,800ウォン（アクアリウム内の端末に車番登録が必要）"
+    },
+    "reserve": {
+      "req": false,
+      "url": "https://www.visitsealife.com/coex-seoul",
+      "note": {
+        "ko": "공식 온라인 예매가 현장가보다 쌉니다. 날짜별 요금이 다릅니다",
+        "ja": "公式オンライン予約が現地価格より安いです。日付ごとに料金が変わります"
+      }
+    },
+    "desc": {
+      "ko": "코엑스몰 안의 대형 아쿠아리움. 상어·가오리 수조와 테마 구역이 이어지고, 실내라 비 오는 날 오전부터 저녁까지 일정을 맞추기 좋습니다.",
+      "ja": "COEXモール内の大型アクアリウム。サメやエイの水槽とテーマゾーンが続き、屋内なので雨の日も午前から夕方まで予定を組みやすいです。"
+    },
+    "tip": {
+      "ko": "매주 수요일 17시 이후 '문화가 있는 날'에는 현장에서 20,000원입니다. 코엑스몰 영수증(1만원 이상)으로 20% 할인도 됩니다.",
+      "ja": "毎週水曜17時以降の「文化のある日」は現地で20,000ウォン。COEXモールのレシート（1万ウォン以上）でも20%割引になります。"
+    },
+    "caution": {
+      "ko": "관람은 1시간 30분~2시간이고 재입장은 되지 않습니다. 현장 할인은 서로 중복되지 않습니다.",
+      "ja": "観覧は1時間30分〜2時間で再入場はできません。現地割引は重複して使えません。"
+    },
+    "official": "https://www.visitsealife.com/coex-seoul",
+    "sources": [
+      "https://www.visitsealife.com/coex-seoul/plan-your-visit/before-you-visit/opening-hours/",
+      "https://www.starfield.co.kr/coexmall/entertainment/coexaqua.do"
+    ]
+  },
+  {
+    "id": "lotteauna",
+    "region": "seoul-gangnam",
+    "name": {
+      "ko": "롯데월드 아쿠아리움",
+      "ja": "ロッテワールド アクアリウム"
+    },
+    "addr": {
+      "ko": "서울특별시 송파구 올림픽로 300 롯데월드몰 지하 1층 (신천동)",
+      "ja": "ソウル特別市 松坡区 オリンピック路300 ロッテワールドモール地下1階（シンチョン洞）"
+    },
+    "lat": 37.51345,
+    "lng": 127.1048,
+    "hours": {
+      "ko": "월~목 10:00~20:00, 금~일 10:00~22:00 (입장 마감은 영업 종료 1시간 전)",
+      "ja": "月〜木 10:00〜20:00、金〜日 10:00〜22:00（入場は閉館1時間前まで）"
+    },
+    "closed": {
+      "ko": "연중무휴",
+      "ja": "年中無休"
+    },
+    "closedDays": [],
+    "fee": {
+      "ko": "어른·청소년(13세 이상) 37,000원 / 어린이(36개월~12세) 33,000원 / 36개월 미만 무료",
+      "ja": "大人・中高生（13歳以上）37,000ウォン／子ども（36か月〜12歳）33,000ウォン／36か月未満無料"
+    },
+    "cost": "high",
+    "ages": [
+      "toddler",
+      "kid"
+    ],
+    "themes": [
+      "animal"
+    ],
+    "tags": [
+      "rain",
+      "stroller"
+    ],
+    "baby": {
+      "ko": "",
+      "ja": ""
+    },
+    "parking": {
+      "ko": "롯데월드몰 주차장(유료). 관람 후 영수증 할인 여부를 확인하세요.",
+      "ja": "ロッテワールドモール駐車場（有料）。観覧後のレシート割引を確認しましょう。"
+    },
+    "reserve": {
+      "req": false,
+      "url": "https://www.lotteworld.com/aquarium/",
+      "note": {
+        "ko": "날짜별 운영시간이 달라 공식 운영 달력을 확인하세요",
+        "ja": "日付ごとに営業時間が違うので公式カレンダーを確認"
+      }
+    },
+    "desc": {
+      "ko": "5대양을 주제로 한 13개 테마존과 폭 25m 수조가 이어지는 도심 아쿠아리움. 잠실 롯데월드몰 지하에 있어 비 오는 날 아이와 하루 코스로 묶기 좋습니다.",
+      "ja": "5大洋をテーマにした13のテーマゾーンと幅25mの水槽が続く都心のアクアリウム。蚕室のロッテワールドモール地下にあり、雨の日に子どもと1日コースに組みやすいです。"
+    },
+    "tip": {
+      "ko": "17시 이후 '아쿠아 나잇'과 통신사 멤버십 할인이 있습니다. 금·토는 22시까지 해 저녁이 한적합니다.",
+      "ja": "17時以降の「アクアナイト」や通信会社メンバーシップ割引があります。金・土は22時までなので夜が空いています。"
+    },
+    "caution": {
+      "ko": "요금은 2026년 7월 17일부터 인상된 금액입니다. 서울스카이 패키지는 같은 날에만 쓸 수 있습니다.",
+      "ja": "料金は2026年7月17日からの改定額です。ソウルスカイとのセットは同日のみ利用できます。"
+    },
+    "official": "https://www.lotteworld.com/aquarium/",
+    "sources": [
+      "https://korean.visitseoul.net/jamsil/%EB%A1%AF%EB%8D%B0%EC%9B%94%EB%93%9C-%EC%95%84%EC%BF%A0%EC%95%84%EB%A6%AC%EC%9B%80/KOP037367",
+      "https://www.scicenter.or.kr/bbs/board.php?bo_table=member_news&wr_id=15421"
+    ]
+  },
+  {
+    "id": "zoolung",
+    "region": "seoul-seonam",
+    "name": {
+      "ko": "주렁주렁 영등포점",
+      "ja": "ジュロンジュロン ヨンドゥンポ店"
+    },
+    "addr": {
+      "ko": "서울특별시 영등포구 영중로 15 타임스퀘어 4~5층 (영등포동4가)",
+      "ja": "ソウル特別市 永登浦区 永中路15 タイムズスクエア4〜5階（ヨンドゥンポ洞4街）"
+    },
+    "lat": 37.51711,
+    "lng": 126.90299,
+    "hours": {
+      "ko": "평일 12:00~20:00 (입장 마감 18:30), 주말·공휴일 10:30~20:30 (19:00)",
+      "ja": "平日12:00〜20:00（入場は18:30まで）、週末・祝日10:30〜20:30（19:00まで）"
+    },
+    "closed": {
+      "ko": "매월 첫째·셋째 월요일",
+      "ja": "毎月第1・第3月曜"
+    },
+    "closedDays": [],
+    "fee": {
+      "ko": "1인 29,000원 (평일 종일 / 주말·공휴일 4시간) · 18개월 미만 무료 · 18~36개월 30% 할인 · 세 자녀 이상 셋째부터 무료",
+      "ja": "1人29,000ウォン（平日終日／週末・祝日4時間）・18か月未満無料・18〜36か月30%割引・子どもの3人目から無料"
+    },
+    "cost": "high",
+    "ages": [
+      "toddler",
+      "kid"
+    ],
+    "themes": [
+      "animal"
+    ],
+    "tags": [
+      "rain",
+      "stroller"
+    ],
+    "baby": {
+      "ko": "",
+      "ja": ""
+    },
+    "parking": {
+      "ko": "타임스퀘어 지하주차장 3시간 무료 (5층 상품샵 퇴장로에서 등록)",
+      "ja": "タイムズスクエア地下駐車場が3時間無料（5階ショップ出口で登録）"
+    },
+    "reserve": {
+      "req": false,
+      "url": "https://zoolungzoolung.com/%EC%A7%80%EC%A0%90%EC%95%88%EB%82%B4/%EC%98%81%EB%93%B1%ED%8F%AC%EC%A0%90/",
+      "note": {
+        "ko": "현장 구매 가능. 온라인 예매가 더 쌉니다",
+        "ja": "現地購入可。オンライン予約のほうが安いです"
+      }
+    },
+    "desc": {
+      "ko": "타임스퀘어 4~5층을 채운 실내 동물 테마파크. '시간 여행자' 세계관과 미디어아트로 꾸며 단순 관람보다 탐험에 가깝습니다. 도심에서 비 오는 날 동물을 만나기 좋습니다.",
+      "ja": "タイムズスクエアの4〜5階を使った屋内動物テーマパーク。「時間旅行者」の世界観とメディアアートで飾られ、見学というより探検に近い体験です。都心で雨の日に動物に会えます。"
+    },
+    "tip": {
+      "ko": "평일은 종일권이라 천천히 돌기 좋습니다. 주말 4시간을 넘기면 10분당 1,000원이 붙습니다.",
+      "ja": "平日は終日券なのでゆっくり回れます。週末に4時間を超えると10分ごと1,000ウォンです。"
+    },
+    "caution": {
+      "ko": "매표는 4층, 입장은 5층입니다. 매월 첫째·셋째 월요일은 휴무이니 날짜를 확인하세요.",
+      "ja": "チケットは4階、入場は5階です。毎月第1・第3月曜は休みなので日付を確認しましょう。"
+    },
+    "official": "https://zoolungzoolung.com/%EC%A7%80%EC%A0%90%EC%95%88%EB%82%B4/%EC%98%81%EB%93%B1%ED%8F%AC%EC%A0%90/",
+    "sources": [
+      "https://zoolungzoolung.com/faq/",
+      "https://zoolungzoolung.com/%EC%A7%80%EC%A0%90%EC%95%88%EB%82%B4/%EC%98%81%EB%93%B1%ED%8F%AC%EC%A0%90/"
+    ]
+  },
+  {
+    "id": "kidzania",
+    "region": "seoul-gangnam",
+    "name": {
+      "ko": "키자니아 서울",
+      "ja": "キッザニア ソウル"
+    },
+    "addr": {
+      "ko": "서울특별시 송파구 올림픽로 240 롯데월드 내 (잠실동)",
+      "ja": "ソウル特別市 松坡区 オリンピック路240 ロッテワールド内（チャムシル洞）"
+    },
+    "lat": 37.51088,
+    "lng": 127.09692,
+    "hours": {
+      "ko": "평일 10:00~18:00 (5시간 자유입장권·종일권, 15시 이후 3시간제) / 주말·성수기 1부 10:00~15:00, 2부 15:00~19:30",
+      "ja": "平日10:00〜18:00（5時間フリーパス・終日券、15時以降は3時間制）／週末・繁忙期 1部10:00〜15:00、2部15:00〜19:30"
+    },
+    "closed": {
+      "ko": "연중무휴 (운영 일정은 공식 공지 확인)",
+      "ja": "年中無休（運営日程は公式案内を確認）"
+    },
+    "closedDays": [],
+    "fee": {
+      "ko": "어린이(36개월~중3) 평일 5시간 57,000원·종일 62,000원·3시간 27,000원 / 주말 1부 57,000·2부 46,000·종일 72,000원 / 보호자 20,000원(3시간 12,000원)",
+      "ja": "子ども（36か月〜中学3年）平日5時間57,000ウォン・終日62,000ウォン・3時間27,000ウォン／週末1部57,000・2部46,000・終日72,000ウォン／保護者20,000ウォン（3時間12,000ウォン）"
+    },
+    "cost": "high",
+    "ages": [
+      "toddler",
+      "kid"
+    ],
+    "themes": [
+      "experience"
+    ],
+    "tags": [
+      "rain",
+      "reserve"
+    ],
+    "baby": {
+      "ko": "36개월 미만은 무료로 입장하지만 직업체험은 할 수 없습니다.",
+      "ja": "36か月未満は無料で入場できますが、職業体験はできません。"
+    },
+    "parking": {
+      "ko": "롯데월드 주차장(유료). 주말에는 조기 만차가 잦습니다.",
+      "ja": "ロッテワールド駐車場（有料）。週末は早い時間に満車になりがちです。"
+    },
+    "reserve": {
+      "req": true,
+      "url": "https://www.kidzania.co.kr/member/reservation/reservationGeneral.do",
+      "note": {
+        "ko": "온라인 사전 예매 필수(현장 매진 잦음). 초등 3학년 미만은 보호자 동반",
+        "ja": "オンライン事前予約が必須（現地完売が多い）。小学3年未満は保護者同伴"
+      }
+    },
+    "desc": {
+      "ko": "아이가 90여 가지 직업을 직접 해보는 실내 직업체험 테마파크. 체험마다 키조(화폐)를 벌고 쓰면서 경제 개념도 익힙니다. 실내라 날씨 영향을 받지 않습니다.",
+      "ja": "子どもが90種類ほどの職業を実際に体験できる屋内の職業体験テーマパーク。体験ごとにキゾ（通貨）を稼いで使ううちに経済の考え方も身につきます。屋内なので天候の影響を受けません。"
+    },
+    "tip": {
+      "ko": "발권이 8시 45분부터 시작하니 일찍 도착하세요. 인기 체험은 오픈 직후에 몰리고, 보호자는 체험실 밖에서 기다립니다.",
+      "ja": "発券は8時45分からなので早めに到着しましょう。人気の体験は開場直後に集中し、保護者は体験室の外で待ちます。"
+    },
+    "caution": {
+      "ko": "36개월 이상부터 체험할 수 있고 운영이 시작되면 환불이 되지 않습니다. 주말 3시간권은 현장 발권만 됩니다.",
+      "ja": "体験は36か月以上からで、運営開始後は払い戻しできません。週末3時間券は現地発券のみです。"
+    },
+    "official": "https://www.kidzania.co.kr",
+    "sources": [
+      "https://www.kidzania.co.kr/experience_guide/charge_guide.do",
+      "https://www.kidzania.co.kr/company/visit_guide.do"
+    ]
+  },
+  {
+    "id": "boramae",
+    "region": "seoul-seonam",
+    "name": {
+      "ko": "보라매안전체험관",
+      "ja": "ポラメ安全体験館"
+    },
+    "addr": {
+      "ko": "서울특별시 동작구 여의대방로20나길 16 보라매공원 내 (신대방동)",
+      "ja": "ソウル特別市 銅雀区 ヨイドデバン路20ナキル16 ポラメ公園内（シンデバン洞）"
+    },
+    "lat": 37.49277,
+    "lng": 126.91702,
+    "hours": {
+      "ko": "화~일 10:00~17:00 (프로그램별 회차)",
+      "ja": "火〜日 10:00〜17:00（プログラムごとに回あり）"
+    },
+    "closed": {
+      "ko": "월요일, 1월 1일, 설·추석 당일",
+      "ja": "月曜、1月1日、旧正月・秋夕の当日"
+    },
+    "closedDays": [
+      1
+    ],
+    "fee": {
+      "ko": "무료 (사전 예약제)",
+      "ja": "無料（事前予約制）"
+    },
+    "cost": "free",
+    "ages": [
+      "toddler",
+      "kid"
+    ],
+    "themes": [
+      "experience"
+    ],
+    "tags": [
+      "rain",
+      "reserve",
+      "hidden"
+    ],
+    "baby": {
+      "ko": "",
+      "ja": ""
+    },
+    "parking": {
+      "ko": "보라매공원 서문 공영주차장(유료)을 이용합니다. 공원 안으로는 차가 들어갈 수 없습니다.",
+      "ja": "ポラメ公園西門の公共駐車場（有料）を利用します。公園内に車は入れません。"
+    },
+    "reserve": {
+      "req": true,
+      "url": "https://fire.seoul.go.kr/boramea/main/",
+      "note": {
+        "ko": "인터넷 사전예약 필수. 5명 미만은 취소될 수 있고, 노쇼 시 4개월 예약 제한",
+        "ja": "インターネット事前予約が必須。5人未満は中止されることがあり、無断欠席は4か月予約制限"
+      }
+    },
+    "desc": {
+      "ko": "지진·태풍·화재·교통사고를 실제처럼 겪어 보는 무료 안전 체험관. 소방관과 함께 방수 체험을 하고 2019년생부터 화재·지진 프로그램에 들어갈 수 있습니다. 1층 소방역사박물관은 예약 없이 관람합니다.",
+      "ja": "地震・台風・火災・交通事故を実際のように体験できる無料の安全体験館。消防士と放水体験ができ、2019年生まれから火災・地震プログラムに参加できます。1階の消防歴史博物館は予約なしで見学できます。"
+    },
+    "tip": {
+      "ko": "방수체험은 전 연령이라 어린 동생도 함께할 수 있습니다. 예약은 당월 포함 3개월까지 열립니다.",
+      "ja": "放水体験は全年齢なので小さいきょうだいも一緒にできます。予約は当月を含む3か月先まで開きます。"
+    },
+    "caution": {
+      "ko": "체험 인원이 5명 미만이면 취소될 수 있어 가족만으로는 자리를 채우기 어려울 수 있습니다. 지각하면 이수증이 나오지 않습니다.",
+      "ja": "体験人数が5人未満だと中止されることがあり、家族だけでは埋めにくい場合があります。遅刻すると修了証が発行されません。"
+    },
+    "official": "https://fire.seoul.go.kr/boramea/main/",
+    "sources": [
+      "https://fire.seoul.go.kr/boramea/main/",
+      "https://www.yugacrew.com/crewletter/boramae-safety-experience"
+    ]
+  },
+  {
+    "id": "gwangnaru",
+    "region": "seoul-downtown",
+    "name": {
+      "ko": "광나루안전체험관",
+      "ja": "クァンナル安全体験館"
+    },
+    "addr": {
+      "ko": "서울특별시 광진구 능동로 238 (능동, 어린이대공원 정문 옆)",
+      "ja": "ソウル特別市 広津区 陵洞路238（ヌンドン、子ども大公園正門の隣）"
+    },
+    "lat": 37.55132,
+    "lng": 127.07718,
+    "hours": {
+      "ko": "화~일 09:00~17:00 (프로그램별 회차)",
+      "ja": "火〜日 09:00〜17:00（プログラムごとに回あり）"
+    },
+    "closed": {
+      "ko": "월요일, 1월 1일, 설·추석 연휴",
+      "ja": "月曜、1月1日、旧正月・秋夕連休"
+    },
+    "closedDays": [
+      1
+    ],
+    "fee": {
+      "ko": "무료 (인터넷 사전예약 필수)",
+      "ja": "無料（インターネット事前予約が必須）"
+    },
+    "cost": "free",
+    "ages": [
+      "toddler",
+      "kid"
+    ],
+    "themes": [
+      "experience"
+    ],
+    "tags": [
+      "rain",
+      "reserve",
+      "hidden"
+    ],
+    "baby": {
+      "ko": "",
+      "ja": ""
+    },
+    "parking": {
+      "ko": "주차 공간이 넓지 않아 대중교통을 권합니다(어린이대공원역 1번 출구 330m).",
+      "ja": "駐車スペースが広くないので公共交通がおすすめ（子ども大公園駅1番出口から330m）"
+    },
+    "reserve": {
+      "req": true,
+      "url": "https://fire.seoul.go.kr",
+      "note": {
+        "ko": "인터넷 사전예약 필수(당일 예약 불가). 긴바지·양말 착용",
+        "ja": "インターネット事前予約が必須（当日予約不可）。長ズボン・靴下を着用"
+      }
+    },
+    "desc": {
+      "ko": "어린이대공원 정문 옆 국내 첫 재난 체험관. 선박 탈출·화재 대피·지진·태풍을 90분 동안 몸으로 익힙니다. 미취학 아이를 받는 '새싹 어린이 안전체험'이 있어 4~6세도 참여할 수 있습니다.",
+      "ja": "子ども大公園の正門横にある国内初の災害体験館。船舶からの脱出・火災避難・地震・台風を90分かけて体で学びます。未就学児向けの「新芽こども安全体験」があり、4〜6歳も参加できます。"
+    },
+    "tip": {
+      "ko": "새싹 어린이 안전체험은 60분이고 토요일 10시에 열립니다. 체험 20분 전부터 입장합니다.",
+      "ja": "新芽こども安全体験は60分で土曜10時に開かれます。体験の20分前から入場できます。"
+    },
+    "caution": {
+      "ko": "긴바지와 양말을 꼭 입어야 하고 반바지·치마·맨발은 체험할 수 없습니다. 20분 이상 지각하면 입장이 안 됩니다.",
+      "ja": "長ズボンと靴下が必須で、半ズボン・スカート・裸足では体験できません。20分以上遅れると入場できません。"
+    },
+    "official": "https://fire.seoul.go.kr",
+    "sources": [
+      "https://fire.seoul.go.kr",
+      "https://www.yugacrew.com/crewletter/gwangnaru-safety-experience"
+    ]
+  },
+  {
+    "id": "lotteworld",
+    "region": "seoul-gangnam",
+    "name": {
+      "ko": "롯데월드 어드벤처",
+      "ja": "ロッテワールド アドベンチャー"
+    },
+    "addr": {
+      "ko": "서울특별시 송파구 올림픽로 240 (잠실동)",
+      "ja": "ソウル特別市 松坡区 オリンピック路240（チャムシル洞）"
+    },
+    "lat": 37.51113,
+    "lng": 127.09812,
+    "hours": {
+      "ko": "월~목·일 10:00~21:00, 금·토 10:00~22:00 (매표·입장은 폐장 1시간 전)",
+      "ja": "月〜木・日10:00〜21:00、金・土10:00〜22:00（発券・入場は閉園1時間前まで）"
+    },
+    "closed": {
+      "ko": "연중무휴",
+      "ja": "年中無休"
+    },
+    "closedDays": [],
+    "fee": {
+      "ko": "종합이용권 1일 어른 67,000·청소년 58,000·어린이(36개월~12세) 50,000원 / 16시 이후 55,000·47,000·39,000원 / 12~36개월 베이비권 17,000원 / 12개월 미만 무료",
+      "ja": "総合パス1日 大人67,000・中高生58,000・子ども（36か月〜12歳）50,000ウォン／16時以降55,000・47,000・39,000ウォン／12〜36か月ベビー券17,000ウォン／12か月未満無料"
+    },
+    "cost": "high",
+    "ages": [
+      "toddler",
+      "kid"
+    ],
+    "themes": [
+      "activity"
+    ],
+    "tags": [
+      "rain",
+      "stroller"
+    ],
+    "baby": {
+      "ko": "",
+      "ja": ""
+    },
+    "parking": {
+      "ko": "롯데월드 주차장(유료). 이용권에 따른 주차 할인은 현장에서 확인하세요.",
+      "ja": "ロッテワールド駐車場（有料）。券による駐車割引は現地で確認しましょう。"
+    },
+    "reserve": {
+      "req": false,
+      "url": "https://www.lotteworld.com",
+      "note": {
+        "ko": "현장·온라인 구매. 날짜별 운영시간과 운휴 기구를 확인하세요",
+        "ja": "現地・オンラインで購入。日付ごとの営業時間と運休器具を確認"
+      }
+    },
+    "desc": {
+      "ko": "유리돔을 덮은 실내 '어드벤처'와 석촌호수 위 야외 '매직아일랜드'로 나뉜 테마파크. 실내 구역은 비가 와도 퍼레이드와 놀이기구가 그대로 돌아갑니다.",
+      "ja": "ガラスドームの屋内「アドベンチャー」と石村湖の上の野外「マジックアイランド」に分かれたテーマパーク。屋内エリアは雨でもパレードや乗り物が動きます。"
+    },
+    "tip": {
+      "ko": "16시 이후 입장권(After4)이 약 12,000원 쌉니다. 비 오는 날은 실내 어드벤처 위주로 동선을 짜세요.",
+      "ja": "16時以降の入場券（After4）が約12,000ウォン安いです。雨の日は屋内アドベンチャー中心に回りましょう。"
+    },
+    "caution": {
+      "ko": "놀이기구마다 키 제한이 있어 100cm 미만 아이가 탈 수 있는 기구는 적습니다. 매직아일랜드는 비·강풍에 운행이 멈출 수 있습니다.",
+      "ja": "乗り物ごとに身長制限があり、100cm未満の子どもが乗れるものは限られます。マジックアイランドは雨・強風で運転が止まることがあります。"
+    },
+    "official": "https://www.lotteworld.com",
+    "sources": [
+      "https://www.lotteworld.com",
+      "https://english.visitseoul.net/attractions/Lotte-World-Adventure/ENP002192"
     ]
   }
 ];

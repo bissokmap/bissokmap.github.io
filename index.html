@@ -4,17 +4,17 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
 <title>비쏙맵 · BissokMap — 인천·부천·김포·서울 실내 아이 나들이</title>
-<meta name="description" content="비쏙맵(BissokMap) — 비 오는 날 아이와 갈 만한 인천·부천·김포·서울 실내 명소 68곳. 운영시간·휴관일·요금·주차·예약을 확인해 정리한 한국어·일본어 지도." />
+<meta name="description" content="비쏙맵(BissokMap) — 비 오는 날 아이와 갈 만한 인천·부천·김포·서울 실내 명소 86곳. 놀거리·체험 테마별 필터와 운영시간·휴관일·요금·주차·예약을 확인해 정리한 한국어·일본어 지도." />
 <meta name="theme-color" content="#6b4b35" />
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="비쏙맵 BissokMap" />
 <meta property="og:title" content="비쏙맵 · BissokMap — 인천·부천·김포·서울 실내 아이 나들이" />
-<meta property="og:description" content="비 오는 날 아이와 갈 만한 실내 명소 68곳. 운영시간·휴관일·요금·주차·예약까지 한눈에. 雨の日・室内キッズマップ." />
+<meta property="og:description" content="비 오는 날 아이와 갈 만한 실내 명소 86곳. 액티비티·동물·체험·박물관 테마별 필터와 운영시간·휴관일·요금·주차·예약까지 한눈에. 雨の日・室内キッズマップ." />
 <meta property="og:url" content="https://bissokmap.github.io/" />
 <link rel="canonical" href="https://bissokmap.github.io/" />
 <meta name="twitter:card" content="summary" />
 <link rel="stylesheet" href="vendor/leaflet/leaflet.css" />
-<link rel="stylesheet" href="assets/styles.css?v=20261126d" />
+<link rel="stylesheet" href="assets/styles.css?v=20261126e" />
 </head>
 <body>
 
@@ -29,7 +29,7 @@
     </div>
 
     <div class="header__right">
-      <span class="chip chip--count" id="headerCount" aria-live="polite">68곳</span>
+      <span class="chip chip--count" id="headerCount" aria-live="polite">86곳</span>
       <div class="lang" role="group" aria-label="Language / 언어">
         <button class="lang__btn is-active" data-lang="ko" type="button">KR</button>
         <button class="lang__btn" data-lang="ja" type="button">JP</button>
@@ -53,6 +53,11 @@
         <button id="searchClear" class="search__clear" type="button" aria-label="검색 지우기" hidden>×</button>
       </div>
 
+      <div class="theme-row">
+        <span class="theme-row__label" id="lblTheme">테마</span>
+        <div class="chips chips--theme" id="themeChips" role="group" aria-labelledby="lblTheme"></div>
+      </div>
+
       <div class="chips" id="regionChips" role="group" aria-label="권역"></div>
 
       <div class="chips chips--sub" id="regionSubChips" role="group" aria-label="서울 권역" hidden></div>
@@ -65,7 +70,7 @@
           <span id="filterToggleLabel">필터</span><span class="btn__badge" id="filterBadge" hidden>0</span>
         </button>
         <button id="resetBtn" class="btn btn--text" type="button">초기화</button>
-        <span class="count" id="count" aria-live="polite">68곳</span>
+        <span class="count" id="count" aria-live="polite">86곳</span>
       </div>
 
       <div class="filters" id="filters">
@@ -92,7 +97,7 @@
     <div class="results" id="results"></div>
 
     <footer class="panel__foot">
-      <p id="updatedNote">정보 확인 2026-11-25 · 방문 전 공식 안내를 다시 확인하세요.</p>
+      <p id="updatedNote">정보 확인 2026-11-26 · 방문 전 공식 안내를 다시 확인하세요.</p>
       <p id="coordNote">지도 좌표는 도로명주소 기준 근사 위치이며, 길찾기는 지도 앱 링크를 이용하세요.</p>
     </footer>
   </aside>
@@ -120,7 +125,7 @@
 <script src="vendor/leaflet/leaflet.js"></script>
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
 
-<script src="data/places.js?v=20261126d"></script>
-<script src="assets/app.js?v=20261126d"></script>
+<script src="data/places.js?v=20261126e"></script>
+<script src="assets/app.js?v=20261126e"></script>
 </body>
 </html>

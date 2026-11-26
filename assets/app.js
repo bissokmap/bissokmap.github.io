@@ -3,7 +3,7 @@
   "use strict";
 
   var PLACES = window.RKM_PLACES || [];
-  var DATA_DATE = "2026-11-25";
+  var DATA_DATE = "2026-11-26";
 
   /* ─────────── 문구 ─────────── */
   var T = {
@@ -14,7 +14,7 @@
       searchClear: "검색 지우기",
       filter: "필터",
       reset: "초기화",
-      ageLabel: "연령", costLabel: "비용", tagLabel: "상황",
+      ageLabel: "연령", costLabel: "비용", tagLabel: "상황", themeLabel: "테마",
       agesRow: "추천 연령",
       today: "오늘 문 여는 곳만",
       count: function (n) { return n + "곳"; },
@@ -32,6 +32,8 @@
         ["seoul-seonam", "영등포·양천·강서·구로·관악"], ["seoul-dongbuk", "노원·성북·도봉·강북·중랑·동대문"]
       ],
       ages: [["all", "전체"], ["infant", "0~2세 영아"], ["toddler", "3~5세 유아"], ["kid", "6세+·초등"]],
+      themes: [["all", "전체"], ["activity", "액티비티·놀이"], ["animal", "동물·바다·식물"],
+               ["experience", "체험·만들기"], ["museum", "박물관·전시"], ["library", "도서관·북카페"]],
       costs: [["all", "전체"], ["free", "무료"], ["low", "1만원 이하"], ["high", "유료 (1만원 초과)"]],
       tags: [["rain", "주차 직통·우천편리"], ["reserve", "사전예약 필수"], ["baby", "수유실·기저귀"], ["stroller", "유모차 편함"], ["hidden", "숨은 명소"]],
       hours: "운영시간", closed: "휴관일", fee: "입장료", reserve: "예약", parking: "주차",
@@ -39,7 +41,7 @@
       closedToday: "오늘 휴관",
       naver: "네이버지도", kakao: "카카오맵", google: "구글맵",
       subNaver: "한국", subKakao: "한국", subGoogle: "일본어",
-      official: "공식 홈페이지", reserveLink: "예약 페이지", copy: "주소 복사", copied: "복사했어요",
+      official: "공식 안내", reserveLink: "예약 페이지", copy: "주소 복사", copied: "복사했어요",
       legendFree: "무료", legendLow: "1만원 이하", legendHigh: "유료",
       updatedNote: "정보 확인 " + DATA_DATE + " · 방문 전 공식 안내를 다시 확인하세요.",
       coordNote: "지도 좌표는 도로명주소 기준 근사 위치입니다. 길찾기는 지도 앱 링크를 이용하세요.",
@@ -67,6 +69,7 @@
       ageLabel: "年齢",
       costLabel: "料金",
       tagLabel: "状況",
+      themeLabel: "テーマ",
       agesRow: "おすすめ年齢",
       today: "今日営業中のみ",
       count: function (n) { return n + "か所"; },
@@ -84,6 +87,8 @@
         ["seoul-seonam", "永登浦・陽川・江西・九老・冠岳"], ["seoul-dongbuk", "蘆原・城北・道峰・江北・中浪・東大門"]
       ],
       ages: [["all", "すべて"], ["infant", "0〜2歳"], ["toddler", "3〜5歳"], ["kid", "6歳以上（小学生）"]],
+      themes: [["all", "すべて"], ["activity", "アクティビティ・遊び"], ["animal", "動物・海・植物"],
+               ["experience", "体験・工作"], ["museum", "博物館・展示"], ["library", "図書館・ブックカフェ"]],
       costs: [["all", "すべて"], ["free", "無料"], ["low", "1万ウォン以下"], ["high", "有料（1万ウォン超）"]],
       tags: [["rain", "駐車場直結・雨に便利"], ["reserve", "事前予約必須"], ["baby", "授乳室・おむつ"], ["stroller", "ベビーカー快適"], ["hidden", "穴場"]],
       hours: "営業時間", closed: "休館日", fee: "料金", reserve: "予約", parking: "駐車場",
@@ -91,7 +96,7 @@
       closedToday: "本日休館",
       naver: "Naverマップ", kakao: "Kakaoマップ", google: "Googleマップ",
       subNaver: "韓国", subKakao: "韓国", subGoogle: "日本語",
-      official: "公式サイト", reserveLink: "予約ページ", copy: "住所をコピー", copied: "コピーしました",
+      official: "公式案内", reserveLink: "予約ページ", copy: "住所をコピー", copied: "コピーしました",
       legendFree: "無料", legendLow: "1万ウォン以下", legendHigh: "有料",
       updatedNote: "情報確認 " + DATA_DATE + "・訪問前に公式案内をご確認ください。",
       coordNote: "地図の座標は住所によるおおよその位置です。経路は地図アプリのリンクをご利用ください。",
@@ -118,6 +123,7 @@
   var state = {
     lang: "ko",
     region: "all",
+    theme: "all",
     age: "all",
     cost: "all",
     tags: [],
@@ -197,6 +203,16 @@
     var arr = t().tags;
     for (var i = 0; i < arr.length; i++) if (arr[i][0] === id) return arr[i][1];
     return id;
+  }
+
+  function themeLabel(id) {
+    var arr = t().themes;
+    for (var i = 0; i < arr.length; i++) if (arr[i][0] === id) return arr[i][1];
+    return id;
+  }
+
+  function themeText(p) {
+    return (p.themes || []).map(themeLabel).join(" · ");
   }
 
   var $ = function (id) { return document.getElementById(id); };
@@ -318,6 +334,7 @@
       }
     }
     if (state.age !== "all" && (p.ages || []).indexOf(state.age) === -1) return false;
+    if (state.theme !== "all" && (p.themes || []).indexOf(state.theme) === -1) return false;
     if (state.cost !== "all" && p.cost !== state.cost) return false;
     for (var i = 0; i < state.tags.length; i++) {
       if ((p.tags || []).indexOf(state.tags[i]) === -1) return false;
@@ -328,6 +345,7 @@
       var hay = [
         p.name.ko, p.name.ja, p.addr.ko, p.addr.ja,
         (p.tags || []).map(tagLabel).join(" "),
+        themeText(p),
         p.desc ? p.desc.ko + " " + p.desc.ja : "",
         regionLabel(p.region)
       ].join(" ").toLowerCase();
@@ -369,6 +387,14 @@
   }
 
   function renderChips() {
+    // 테마(유형) 칩 — 검색 바로 아래, 한 줄 가로 스크롤
+    chipRow($("themeChips"), t().themes, state.theme, function (id) {
+      state.theme = id; renderChips(); render(true);
+    });
+    Array.prototype.forEach.call($("themeChips").children, function (b) {
+      b.classList.add("chip--theme");
+    });
+
     chipRow($("regionChips"), t().regions, state.region, function (id) {
       state.region = id; renderChips(); render();
     });
@@ -444,7 +470,8 @@
       var tags = [];
       if (closed) tags.push('<span class="tag tag--closed">' + esc(t().closedToday) + "</span>");
       tags.push('<span class="tag tag--' + p.cost + '">' + esc(costLabel(p.cost)) + "</span>");
-      (p.tags || []).slice(0, 3).forEach(function (tg) {
+      tags.push('<span class="tag tag--theme">' + esc(themeText(p)) + "</span>");
+      (p.tags || []).slice(0, 2).forEach(function (tg) {
         tags.push('<span class="tag">' + esc(tagLabel(tg)) + "</span>");
       });
 
@@ -980,6 +1007,7 @@
     $("lblAge").textContent = t().ageLabel;
     $("lblCost").textContent = t().costLabel;
     $("lblTag").textContent = t().tagLabel;
+    $("lblTheme").textContent = t().themeLabel;
     $("lblToday").textContent = t().today;
     $("tabList").textContent = t().list;
     $("tabMap").textContent = t().map;
@@ -1021,6 +1049,7 @@
     var pills = [];
     if (closed) pills.push('<span class="tag tag--closed">' + esc(tr.closedToday) + "</span>");
     pills.push('<span class="tag">' + esc(costLabel(p.cost)) + "</span>");
+    pills.push('<span class="tag tag--theme">' + esc(themeText(p)) + "</span>");
     (p.tags || []).forEach(function (tg) {
       pills.push('<span class="tag">' + esc(tagLabel(tg)) + "</span>");
     });
@@ -1262,7 +1291,7 @@
     });
 
     $("resetBtn").addEventListener("click", function () {
-      state.region = "all"; state.age = "all"; state.cost = "all";
+      state.region = "all"; state.theme = "all"; state.age = "all"; state.cost = "all";
       state.tags = []; state.q = ""; state.todayOnly = false; state.favOnly = false;
       $("searchInput").value = "";
       $("searchClear").hidden = true;

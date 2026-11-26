@@ -264,6 +264,78 @@ button, input { font-family: inherit; }
 
 .chips[hidden] { display: none; }
 
+/* 테마(유형) 칩 — 검색 바로 아래, 가로 스크롤 */
+.theme-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.theme-row__label {
+  flex: none;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: .04em;
+  color: var(--ink-3, #7d6c5c);
+}
+
+.chips--theme {
+  flex: 1 1 auto;
+  min-width: 0;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  scrollbar-width: none;
+  padding-bottom: 2px;
+  -webkit-mask-image: linear-gradient(to right, #000 calc(100% - 22px), transparent);
+  mask-image: linear-gradient(to right, #000 calc(100% - 22px), transparent);
+}
+
+.chips--theme::-webkit-scrollbar { display: none; }
+
+@media (min-width: 880px) {
+  .chips--theme {
+    flex-wrap: wrap;
+    overflow: visible;
+    -webkit-mask-image: none;
+    mask-image: none;
+  }
+}
+
+.chip--theme {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 6px 11px 6px 9px;
+}
+
+.chip--theme::before {
+  content: "";
+  flex: none;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--dot, #8a6247);
+}
+
+.chip--theme[data-value="all"] { padding-left: 11px; }
+.chip--theme[data-value="all"]::before { display: none; }
+.chip--theme[data-value="activity"] { --dot: #8a6247; }
+.chip--theme[data-value="animal"] { --dot: #60754f; }
+.chip--theme[data-value="experience"] { --dot: #9a6f45; }
+.chip--theme[data-value="museum"] { --dot: #5c3f2e; }
+.chip--theme[data-value="library"] { --dot: #7d6c5c; }
+
+.chip--theme.is-active { background: var(--brand); border-color: var(--brand); color: #fff; }
+.chip--theme.is-active::before { background: #fff; }
+
+/* 카드·상세의 테마 표시 */
+.tag--theme {
+  background: #f1e6d7;
+  color: #6a4f38;
+  border-color: #e2d2bd;
+}
+
 #regionChips {
   margin-top: 9px;
   flex-wrap: nowrap;
