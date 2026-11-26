@@ -4720,8 +4720,8 @@ window.RKM_PLACES = [
       "ja": "滑り止めソックスが必須なので持参しましょう。週末午後は満車になりやすいので、午前か平日昼が快適です。"
     },
     "caution": {
-      "ko": "월요일은 정기휴무이고, 36개월 미만은 보호자 없이 입장할 수 없습니다.",
-      "ja": "月曜は定休日。36か月未満は保護者なしでは入場できません。"
+      "ko": "월요일은 정기휴무이고, 36개월 미만은 보호자 없이 입장할 수 없습니다. 요일별 영업시간이 자주 바뀌어 출발 전 전화 확인을 권합니다.",
+      "ja": "月曜は定休日。36か月未満は保護者なしでは入場できません。曜日ごとの営業時間が変わりやすいので、出発前の電話確認がおすすめです。"
     },
     "official": "https://map.naver.com/p/search/%EB%9F%AC%EC%89%AC%20%ED%8A%B8%EB%9E%A8%ED%8E%84%EB%A6%B0%ED%8C%8C%ED%81%AC%20%EC%86%A1%EB%8F%84%EC%A0%90",
     "sources": [
@@ -5410,8 +5410,8 @@ window.RKM_PLACES = [
     },
     "closedDays": [],
     "fee": {
-      "ko": "평일 15,900원 / 주말·공휴일 18,900원 (대인·소인 동일) / 24개월 미만 무료 / 세 자녀 유료 입장 시 1명 무료",
-      "ja": "平日15,900ウォン／週末・祝日18,900ウォン（大人・子ども同額）／24か月未満無料／子ども3人の支払いで1人無料"
+      "ko": "평일 15,900원 / 주말·공휴일 18,900원 (대인·소인 동일) / 유아 무료는 24~36개월로 안내가 갈려 현장 확인 / 세 자녀 유료 입장 시 1명 무료",
+      "ja": "平日15,900ウォン／週末・祝日18,900ウォン（大人・子ども同額）／幼児無料は24〜36か月と案内が分かれるため現地確認／子ども3人の支払いで1人無料"
     },
     "cost": "high",
     "ages": [
@@ -5741,7 +5741,7 @@ window.RKM_PLACES = [
       "ko": "36개월 이상부터 체험할 수 있고 운영이 시작되면 환불이 되지 않습니다. 주말 3시간권은 현장 발권만 됩니다.",
       "ja": "体験は36か月以上からで、運営開始後は払い戻しできません。週末3時間券は現地発券のみです。"
     },
-    "official": "https://www.kidzania.co.kr",
+    "official": "https://www.kidzania.co.kr/experience_guide/charge_guide.do",
     "sources": [
       "https://www.kidzania.co.kr/experience_guide/charge_guide.do",
       "https://www.kidzania.co.kr/company/visit_guide.do"
@@ -5891,9 +5891,9 @@ window.RKM_PLACES = [
       "ko": "긴바지와 양말을 꼭 입어야 하고 반바지·치마·맨발은 체험할 수 없습니다. 20분 이상 지각하면 입장이 안 됩니다.",
       "ja": "長ズボンと靴下が必須で、半ズボン・スカート・裸足では体験できません。20分以上遅れると入場できません。"
     },
-    "official": "https://fire.seoul.go.kr",
+    "official": "https://fire.seoul.go.kr/gwangnaru/main/",
     "sources": [
-      "https://fire.seoul.go.kr",
+      "https://fire.seoul.go.kr/gwangnaru/main/",
       "https://www.yugacrew.com/crewletter/gwangnaru-safety-experience"
     ]
   },
