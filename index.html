@@ -3,18 +3,18 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-<title>비쏙맵 · BissokMap — 인천·부천·김포·서울 실내 아이 나들이</title>
-<meta name="description" content="비쏙맵(BissokMap) — 비 오는 날 아이와 갈 만한 인천·부천·김포·서울 실내 명소 86곳. 놀거리·체험 테마별 필터와 운영시간·휴관일·요금·주차·예약을 확인해 정리한 한국어·일본어 지도." />
+<title>비쏙맵 · BissokMap — 인천·서울·경기 113곳 실내 아이 나들이</title>
+<meta name="description" content="비쏙맵(BissokMap) — 비 오는 날 아이와 갈 만한 인천·서울·경기 113곳. 놀거리·체험 테마와 2026년 11~12월 시즌 행사·팝업, 가까운 순 정렬, 현장 꿀팁과 근처 식당까지 담은 한국어·일본어 지도." />
 <meta name="theme-color" content="#6b4b35" />
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="비쏙맵 BissokMap" />
-<meta property="og:title" content="비쏙맵 · BissokMap — 인천·부천·김포·서울 실내 아이 나들이" />
-<meta property="og:description" content="비 오는 날 아이와 갈 만한 실내 명소 86곳. 액티비티·동물·체험·박물관 테마별 필터와 운영시간·휴관일·요금·주차·예약까지 한눈에. 雨の日・室内キッズマップ." />
+<meta property="og:title" content="비쏙맵 · BissokMap — 인천·서울·경기 113곳 실내 아이 나들이" />
+<meta property="og:description" content="비 오는 날 아이와 갈 만한 수도권 실내 명소 113곳. 액티비티·동물·체험·박물관·시즌 행사 필터와 가까운 순 정렬, 운영시간·휴관일·요금·주차·예약·현장 꿀팁까지. 雨の日・室内キッズマップ." />
 <meta property="og:url" content="https://bissokmap.github.io/" />
 <link rel="canonical" href="https://bissokmap.github.io/" />
 <meta name="twitter:card" content="summary" />
 <link rel="stylesheet" href="vendor/leaflet/leaflet.css" />
-<link rel="stylesheet" href="assets/styles.css?v=20261126f" />
+<link rel="stylesheet" href="assets/styles.css?v=20261126g" />
 </head>
 <body>
 
@@ -24,12 +24,12 @@
       <span class="brand__mark" aria-hidden="true">☔</span>
       <div class="brand__text">
         <h1 id="appTitle">비쏙맵</h1>
-        <p id="appSub">인천·부천·김포·서울 실내 나들이</p>
+        <p id="appSub">인천·서울·경기 실내 나들이</p>
       </div>
     </div>
 
     <div class="header__right">
-      <span class="chip chip--count" id="headerCount" aria-live="polite">86곳</span>
+      <span class="chip chip--count" id="headerCount" aria-live="polite">113곳</span>
       <div class="lang" role="group" aria-label="Language / 언어">
         <button class="lang__btn is-active" data-lang="ko" type="button">KR</button>
         <button class="lang__btn" data-lang="ja" type="button">JP</button>
@@ -66,11 +66,23 @@
         <button id="favChip" class="chip chip--fav" type="button" aria-pressed="false" aria-label="찜한 곳 0">
           <span class="chip__heart" aria-hidden="true">♡</span><span id="favChipLabel">찜한 곳</span><span class="chip__n" id="favCount">0</span>
         </button>
+        <button id="nearBtn" class="chip chip--near" type="button" aria-pressed="false" title="현재 위치 기준 가까운 순">
+          <span aria-hidden="true">📍</span><span id="nearBtnLabel">가까운 순</span>
+        </button>
         <button id="filterToggle" class="btn btn--ghost" type="button" aria-expanded="false" aria-controls="filters">
           <span id="filterToggleLabel">필터</span><span class="btn__badge" id="filterBadge" hidden>0</span>
         </button>
         <button id="resetBtn" class="btn btn--text" type="button">초기화</button>
-        <span class="count" id="count" aria-live="polite">86곳</span>
+        <span class="count" id="count" aria-live="polite">113곳</span>
+      </div>
+
+      <div class="nearpanel" id="nearPanel" hidden>
+        <p class="nearpanel__note" id="nearNote">위치를 쓸 수 없어요. 기준점을 골라 주세요.</p>
+        <div class="nearpanel__btns">
+          <button type="button" data-origin="songdo">송도(센트럴파크)</button>
+          <button type="button" data-origin="seoul">서울(시청)</button>
+          <button type="button" data-origin="here">현재 위치로 다시</button>
+        </div>
       </div>
 
       <div class="filters" id="filters">
@@ -125,7 +137,7 @@
 <script src="vendor/leaflet/leaflet.js"></script>
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
 
-<script src="data/places.js?v=20261126f"></script>
-<script src="assets/app.js?v=20261126f"></script>
+<script src="data/places.js?v=20261126g"></script>
+<script src="assets/app.js?v=20261126g"></script>
 </body>
 </html>

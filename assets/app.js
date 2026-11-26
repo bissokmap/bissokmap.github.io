@@ -9,7 +9,27 @@
   var T = {
     ko: {
       appTitle: "비쏙맵",
-      appSub: "인천·부천·김포·서울 실내 나들이",
+      appSub: "인천·서울·경기 실내 나들이",
+      nearBtn: "가까운 순",
+      nearTitle: "현재 위치 기준으로 가까운 순",
+      nearLoading: "위치 확인 중…",
+      nearDenied: "위치를 쓸 수 없어요. 기준점을 골라 주세요.",
+      nearSongdo: "송도(센트럴파크)",
+      nearSeoul: "서울(시청)",
+      nearRetry: "현재 위치로 다시",
+      nearOriginPrefix: "기준",
+      nearOff: "거리순 끄기",
+      distAway: "약 ",
+      seasonLabel: "행사 기간",
+      seasonOngoing: "진행 중",
+      seasonUpcoming: "개최 예정",
+      seasonEnded: "종료",
+      tipsLabel: "현장 꿀팁",
+      foodLabel: "근처 아이랑 식사·카페",
+      foodWalk: "이동",
+      themeSeasonShort: "시즌",
+      emptySeason: "지금은 진행 중인 시즌 행사가 없어요",
+      emptySeasonBody: "종료된 행사는 목록에서 빼 두었습니다. 다른 테마를 골라 보세요.",
       searchPh: "장소·동네·키워드 검색",
       searchClear: "검색 지우기",
       filter: "필터",
@@ -23,7 +43,8 @@
       list: "목록",
       map: "지도",
       regions: [
-        ["all", "전체"], ["seoul", "서울"], ["songdo", "송도·연수"], ["oldtown", "원도심"],
+        ["all", "전체"], ["seoul", "서울"], ["gyeonggi-south", "경기 남부·동부"], ["gyeonggi-north", "경기 서부·북부"],
+        ["songdo", "송도·연수"], ["oldtown", "원도심"],
         ["north", "계양·부평·검단"], ["yeongjong", "영종"], ["bucheon", "부천"], ["gimpo", "김포"]
       ],
       seoulRegions: [
@@ -33,7 +54,8 @@
       ],
       ages: [["all", "전체"], ["infant", "0~2세 영아"], ["toddler", "3~5세 유아"], ["kid", "6세+·초등"]],
       themes: [["all", "전체"], ["activity", "액티비티·놀이"], ["animal", "동물·바다·식물"],
-               ["experience", "체험·만들기"], ["museum", "박물관·전시"], ["library", "도서관·북카페"]],
+               ["experience", "체험·만들기"], ["museum", "박물관·전시"], ["library", "도서관·북카페"],
+               ["season", "시즌·팝업·행사"]],
       costs: [["all", "전체"], ["free", "무료"], ["low", "1만원 이하"], ["high", "유료 (1만원 초과)"]],
       tags: [["rain", "주차 직통·우천편리"], ["reserve", "사전예약 필수"], ["baby", "수유실·기저귀"], ["stroller", "유모차 편함"], ["hidden", "숨은 명소"]],
       hours: "운영시간", closed: "휴관일", fee: "입장료", reserve: "예약", parking: "주차",
@@ -61,7 +83,27 @@
     },
     ja: {
       appTitle: "ビッソクマップ",
-      appSub: "雨の日・室内キッズマップ",
+      appSub: "雨の日・室内キッズマップ 仁川・ソウル・京畿",
+      nearBtn: "近い順",
+      nearTitle: "現在地から近い順に並べる",
+      nearLoading: "位置情報を確認中…",
+      nearDenied: "位置情報を使えません。基準地点を選んでください。",
+      nearSongdo: "松島（セントラルパーク）",
+      nearSeoul: "ソウル（市庁）",
+      nearRetry: "現在地で再試行",
+      nearOriginPrefix: "基準",
+      nearOff: "近い順をオフ",
+      distAway: "約",
+      seasonLabel: "開催期間",
+      seasonOngoing: "開催中",
+      seasonUpcoming: "開催予定",
+      seasonEnded: "終了",
+      tipsLabel: "現地のコツ",
+      foodLabel: "近くの子ども向け食事・カフェ",
+      foodWalk: "移動",
+      themeSeasonShort: "シーズン",
+      emptySeason: "今は開催中のシーズンイベントがありません",
+      emptySeasonBody: "終了したイベントは一覧から外しています。別のテーマを選んでください。",
       searchPh: "場所・エリア・キーワード",
       searchClear: "検索を消す",
       filter: "絞り込み",
@@ -78,7 +120,8 @@
       list: "リスト",
       map: "地図",
       regions: [
-        ["all", "すべて"], ["seoul", "ソウル"], ["songdo", "松島・延寿"], ["oldtown", "旧市街（開港場）"],
+        ["all", "すべて"], ["seoul", "ソウル"], ["gyeonggi-south", "京畿南部・東部"], ["gyeonggi-north", "京畿西部・北部"],
+        ["songdo", "松島・延寿"], ["oldtown", "旧市街（開港場）"],
         ["north", "桂陽・富平・検丹"], ["yeongjong", "永宗"], ["bucheon", "富川"], ["gimpo", "金浦"]
       ],
       seoulRegions: [
@@ -88,7 +131,8 @@
       ],
       ages: [["all", "すべて"], ["infant", "0〜2歳"], ["toddler", "3〜5歳"], ["kid", "6歳以上（小学生）"]],
       themes: [["all", "すべて"], ["activity", "アクティビティ・遊び"], ["animal", "動物・海・植物"],
-               ["experience", "体験・工作"], ["museum", "博物館・展示"], ["library", "図書館・ブックカフェ"]],
+               ["experience", "体験・工作"], ["museum", "博物館・展示"], ["library", "図書館・ブックカフェ"],
+               ["season", "シーズン・ポップアップ・イベント"]],
       costs: [["all", "すべて"], ["free", "無料"], ["low", "1万ウォン以下"], ["high", "有料（1万ウォン超）"]],
       tags: [["rain", "駐車場直結・雨に便利"], ["reserve", "事前予約必須"], ["baby", "授乳室・おむつ"], ["stroller", "ベビーカー快適"], ["hidden", "穴場"]],
       hours: "営業時間", closed: "休館日", fee: "料金", reserve: "予約", parking: "駐車場",
@@ -132,10 +176,20 @@
     favOnly: false,
     favs: [],            /* 찜한 장소 id (최근에 담은 것이 앞) */
     selected: null,
-    view: "list"
+    view: "list",
+    sortNear: false,       /* 가까운 순 정렬 */
+    origin: null           /* {lat, lng, key} 거리 기준점 */
   };
 
   var FAV_KEY = "rkm.favs";
+  var ORIGIN_KEY = "rkm.origin";
+
+  /* 위치를 못 쓸 때 고를 수 있는 기본 기준점 */
+  var ORIGINS = {
+    songdo: { lat: 37.3947, lng: 126.6386 },
+    seoul: { lat: 37.5665, lng: 126.9780 },
+    here: null
+  };
 
   try {
     var savedLang = localStorage.getItem("rkm.lang");
@@ -146,6 +200,14 @@
     for (var i = 0; i < PLACES.length; i++) if (PLACES[i].id === id) return id;
     return null;
   }
+
+  try {
+    var savedOrigin = JSON.parse(localStorage.getItem(ORIGIN_KEY) || "null");
+    if (savedOrigin && typeof savedOrigin.lat === "number" && typeof savedOrigin.lng === "number") {
+      state.origin = savedOrigin;
+      state.sortNear = true;
+    }
+  } catch (e) { /* 기준점을 읽지 못하면 거리순 꺼진 채로 시작 */ }
 
   try {
     var savedFavs = JSON.parse(localStorage.getItem(FAV_KEY) || "[]");
@@ -167,6 +229,124 @@
 
   function isClosedToday(p) {
     return (p.closedDays || []).indexOf(today) !== -1;
+  }
+
+  /* ─────────── 거리 · 시즌 ─────────── */
+  function todayISO() {
+    var d = new Date();
+    var m = d.getMonth() + 1, day = d.getDate();
+    return d.getFullYear() + "-" + (m < 10 ? "0" : "") + m + "-" + (day < 10 ? "0" : "") + day;
+  }
+
+  function seasonState(p) {
+    if (!p.season || !p.season.start) return null;
+    var now = todayISO();
+    if (now < p.season.start) return "upcoming";
+    if (now > p.season.end) return "ended";
+    return "ongoing";
+  }
+
+  function md(iso) {
+    var parts = iso.split("-");
+    return parts[1].replace(/^0/, "") + "/" + parts[2].replace(/^0/, "");
+  }
+
+  function seasonShort(p) {
+    if (!p.season) return "";
+    return md(p.season.end);
+  }
+
+  function distanceKm(p) {
+    if (!state.origin) return null;
+    var R = 6371;
+    var dLat = (p.lat - state.origin.lat) * Math.PI / 180;
+    var dLng = (p.lng - state.origin.lng) * Math.PI / 180;
+    var la1 = state.origin.lat * Math.PI / 180, la2 = p.lat * Math.PI / 180;
+    var a = Math.sin(dLat / 2) * Math.sin(dLat / 2) +
+            Math.cos(la1) * Math.cos(la2) * Math.sin(dLng / 2) * Math.sin(dLng / 2);
+    return 2 * R * Math.asin(Math.min(1, Math.sqrt(a)));
+  }
+
+  function distText(km) {
+    if (km == null) return "";
+    if (km < 1) return t().distAway + (Math.max(10, Math.round(km * 1000 / 10) * 10)) + "m";
+    return t().distAway + (km < 10 ? km.toFixed(1) : String(Math.round(km))) + "km";
+  }
+
+  function originLabel() {
+    if (!state.origin) return "";
+    if (state.origin.key === "songdo") return t().nearSongdo;
+    if (state.origin.key === "seoul") return t().nearSeoul;
+    return state.lang === "ja" ? "現在地" : "현재 위치";
+  }
+
+  function setOrigin(key, lat, lng) {
+    state.origin = key ? { key: key, lat: lat, lng: lng } : null;
+    try {
+      localStorage.setItem(ORIGIN_KEY, JSON.stringify(state.origin));
+    } catch (e) { /* 무시 */ }
+    renderNearUI();
+    render(true);
+  }
+
+  var nearPanelOpen = false;
+
+  function renderNearUI() {
+    var btn = $("nearBtn");
+    if (btn) {
+      var on = !!(state.sortNear && state.origin);
+      btn.classList.toggle("is-active", on);
+      btn.setAttribute("aria-pressed", on ? "true" : "false");
+      btn.setAttribute("title", on ? t().nearOff : t().nearTitle);
+      $("nearBtnLabel").textContent = t().nearBtn + (on ? " · " + originLabel() : "");
+    }
+    var panel = $("nearPanel");
+    if (panel) {
+      panel.hidden = !nearPanelOpen;
+      var nb = panel.querySelectorAll("[data-origin]");
+      var labels = { songdo: t().nearSongdo, seoul: t().nearSeoul, here: t().nearRetry };
+      Array.prototype.forEach.call(nb, function (b) {
+        var k = b.getAttribute("data-origin");
+        if (labels[k]) b.textContent = labels[k];
+      });
+    }
+  }
+
+  function nearFail() {
+    nearPanelOpen = true;
+    var note = $("nearNote");
+    if (note) note.textContent = t().nearDenied;
+    renderNearUI();
+  }
+
+  function useLocation() {
+    nearPanelOpen = true;
+    var note = $("nearNote");
+    if (note) note.textContent = t().nearLoading;
+    renderNearUI();
+    if (!navigator.geolocation) { nearFail(); return; }
+    navigator.geolocation.getCurrentPosition(function (pos) {
+      nearPanelOpen = false;
+      state.sortNear = true;
+      setOrigin("here", pos.coords.latitude, pos.coords.longitude);
+    }, function () { nearFail(); }, { enableHighAccuracy: false, timeout: 8000, maximumAge: 600000 });
+  }
+
+  function toggleNear() {
+    if (state.sortNear && state.origin) {
+      state.sortNear = false;
+      nearPanelOpen = false;
+      renderNearUI();
+      render(true);
+      return;
+    }
+    if (state.origin) {
+      state.sortNear = true;
+      renderNearUI();
+      render(true);
+      return;
+    }
+    useLocation();
   }
 
   /* ─────────── 유틸 ─────────── */
@@ -335,6 +515,8 @@
     }
     if (state.age !== "all" && (p.ages || []).indexOf(state.age) === -1) return false;
     if (state.theme !== "all" && (p.themes || []).indexOf(state.theme) === -1) return false;
+    /* 시즌 칩에서는 끝난 행사를 빼고 보여 준다 */
+    if (state.theme === "season" && seasonState(p) === "ended") return false;
     if (state.cost !== "all" && p.cost !== state.cost) return false;
     for (var i = 0; i < state.tags.length; i++) {
       if ((p.tags || []).indexOf(state.tags[i]) === -1) return false;
@@ -355,7 +537,15 @@
   }
 
   function visiblePlaces() {
-    return PLACES.filter(matches);
+    var list = PLACES.filter(matches);
+    if (state.sortNear && state.origin) {
+      list = list.slice().sort(function (a, b) {
+        var da = distanceKm(a), db = distanceKm(b);
+        if (da == null || db == null) return 0;
+        return da - db;
+      });
+    }
+    return list;
   }
 
   function activeFilterCount() {
@@ -448,6 +638,8 @@
       e.className = "empty";
       if (state.favOnly && !state.favs.length) {
         e.innerHTML = "<strong>" + esc(t().favEmptyTitle) + "</strong>" + esc(t().favEmptyBody);
+      } else if (state.theme === "season") {
+        e.innerHTML = "<strong>" + esc(t().emptySeason) + "</strong>" + esc(t().emptySeasonBody);
       } else {
         e.innerHTML = "<strong>" + esc(t().emptyTitle) + "</strong>" + esc(t().emptyBody);
       }
@@ -469,8 +661,19 @@
 
       var tags = [];
       if (closed) tags.push('<span class="tag tag--closed">' + esc(t().closedToday) + "</span>");
+      var ss = seasonState(p);
+      if (ss) {
+        var sl = ss === "ended"
+          ? t().seasonEnded
+          : (ss === "upcoming"
+              ? md(p.season.start) + (state.lang === "ja" ? " 開催" : " 개최")
+              : seasonShort(p) + (state.lang === "ja" ? "まで" : "까지"));
+        tags.push('<span class="tag tag--season' + (ss === "ended" ? " is-ended" : "") + '">🎄 ' + esc(sl) + "</span>");
+      }
       tags.push('<span class="tag tag--' + p.cost + '">' + esc(costLabel(p.cost)) + "</span>");
       tags.push('<span class="tag tag--theme">' + esc(themeText(p)) + "</span>");
+      var dist = distanceKm(p);
+      var distHtml = dist == null ? "" : '<span class="card__dist">📍 ' + esc(distText(dist)) + "</span>";
       (p.tags || []).slice(0, 2).forEach(function (tg) {
         tags.push('<span class="tag">' + esc(tagLabel(tg)) + "</span>");
       });
@@ -479,7 +682,7 @@
         '<span class="card__num" data-cost="' + esc(p.cost) + '">' + (i + 1) + "</span>" +
         '<div class="card__main">' +
           '<h3 class="card__title">' + esc(pick(p.name)) + "</h3>" +
-          '<p class="card__meta">' + esc(regionLabel(p.region)) + "</p>" +
+          '<p class="card__meta">' + esc(regionLabel(p.region)) + distHtml + "</p>" +
           '<p class="card__hours">' + esc(pick(p.hours)) + "</p>" +
           '<div class="card__tags">' + tags.join("") + "</div>" +
         "</div>" +
@@ -1011,6 +1214,7 @@
     $("lblToday").textContent = t().today;
     $("tabList").textContent = t().list;
     $("tabMap").textContent = t().map;
+    renderNearUI();
     $("updatedNote").textContent = t().updatedNote;
     $("coordNote").textContent = t().coordNote;
     $("modalClose").setAttribute("aria-label", t().close);
@@ -1040,6 +1244,31 @@
     if (!value) return "";
     return "<div class=\"dl__row\"><dt>" + esc(label) + "</dt><dd>" + esc(value) +
       (sub ? "<span class=\"sub\">" + esc(sub) + "</span>" : "") + "</dd></div>";
+  }
+
+  function seasonLine(p) {
+    if (!p.season) return "";
+    var ss = seasonState(p);
+    var label = ss === "ended" ? t().seasonEnded : (ss === "upcoming" ? t().seasonUpcoming : t().seasonOngoing);
+    return p.season.start + " ~ " + p.season.end + " (" + label + ")";
+  }
+
+  function tipsHtml(p) {
+    var list = p.tips || [];
+    if (!list.length) return "";
+    return '<div class="tips"><h4 class="tips__h"><span aria-hidden="true">💡</span> ' + esc(t().tipsLabel) + "</h4><ul>" +
+      list.map(function (x) { return "<li>" + esc(pick(x)) + "</li>"; }).join("") + "</ul></div>";
+  }
+
+  function foodHtml(p) {
+    var list = p.nearbyFood || [];
+    if (!list.length) return "";
+    return '<div class="foods"><h4 class="tips__h"><span aria-hidden="true">🍽</span> ' + esc(t().foodLabel) + "</h4><ul>" +
+      list.map(function (f) {
+        var walk = f.walk ? '<span class="foods__walk">' + esc(t().foodWalk) + " " + esc(pick(f.walk)) + "</span>" : "";
+        return "<li><strong>" + esc(f.name) + "</strong>" + walk +
+          (f.note ? '<span class="foods__note">' + esc(pick(f.note)) + "</span>" : "") + "</li>";
+      }).join("") + "</ul></div>";
   }
 
   function buildModal(p) {
@@ -1087,7 +1316,10 @@
           row(tr.reserve, reserveText, reserveSub) +
           row(tr.parking, pick(p.parking)) +
           row(tr.baby, pick(p.baby)) +
+          row(tr.seasonLabel, seasonLine(p)) +
         "</dl>" +
+        tipsHtml(p) +
+        foodHtml(p) +
         '<div class="maplinks">' +
           '<a href="' + l.naver + '" target="_blank" rel="noopener noreferrer">' + esc(tr.naver) + "</a>" +
           '<a href="' + l.kakao + '" target="_blank" rel="noopener noreferrer">' + esc(tr.kakao) + "</a>" +
@@ -1293,6 +1525,7 @@
     $("resetBtn").addEventListener("click", function () {
       state.region = "all"; state.theme = "all"; state.age = "all"; state.cost = "all";
       state.tags = []; state.q = ""; state.todayOnly = false; state.favOnly = false;
+      nearPanelOpen = false;
       $("searchInput").value = "";
       $("searchClear").hidden = true;
       $("todayOnly").checked = false;
@@ -1304,6 +1537,19 @@
     $("favChip").addEventListener("click", function () {
       state.favOnly = !state.favOnly;
       render(true);
+    });
+
+    $("nearBtn").addEventListener("click", toggleNear);
+    Array.prototype.forEach.call(document.querySelectorAll("#nearPanel [data-origin]"), function (b) {
+      b.addEventListener("click", function () {
+        var k = b.getAttribute("data-origin");
+        if (k === "here") { useLocation(); return; }
+        var o = ORIGINS[k];
+        if (!o) return;
+        nearPanelOpen = false;
+        state.sortNear = true;
+        setOrigin(k, o.lat, o.lng);
+      });
     });
 
     $("todayOnly").addEventListener("change", function () {
