@@ -232,6 +232,7 @@ work/rainy-kids-map/
 기존 회귀: `verify.py` **126개 검사 전부 통과**(4개 구성 · 카카오맵/Leaflet 폴백 · 86곳 마커·클러스터·부천 12·서울 44·강남 10·무료 38), `verify-fav.py` **34개 검사 전부 통과**.
 
 스크린샷: `shots/11-theme-activity-desktop.png`(테마 액티비티), `shots/11-theme-animal-mobile.png`, `shots/11-theme-ja-mobile.png`, `shots/11-stage5-deeplink-desktop.png`.
+라이브(2026-11-26 16:5x, https://bissokmap.github.io/): `shots/12-live-activity-2026-11-26.png`(액티비티 23곳 · 첫 카드 러쉬 송도·꿈빛나래), `shots/12-live-animal-2026-11-26.png`(동물 11곳), `shots/12-live-activity-mobile-2026-11-26.png` — `verify-theme.py live` 25/25, `verify-fav.py live` 7/7 통과.
 
 실행: `LD_LIBRARY_PATH=/workspace/.local/chromelibs python3 verify-theme.py` · 라이브 확인은 `python3 verify-theme.py live`
 
