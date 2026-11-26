@@ -14,7 +14,7 @@
 <link rel="canonical" href="https://bissokmap.github.io/" />
 <meta name="twitter:card" content="summary" />
 <link rel="stylesheet" href="vendor/leaflet/leaflet.css" />
-<link rel="stylesheet" href="assets/styles.css?v=20261126b" />
+<link rel="stylesheet" href="assets/styles.css?v=20261126c" />
 </head>
 <body>
 
@@ -58,6 +58,9 @@
       <div class="chips chips--sub" id="regionSubChips" role="group" aria-label="서울 권역" hidden></div>
 
       <div class="panel__row">
+        <button id="favChip" class="chip chip--fav" type="button" aria-pressed="false" aria-label="찜한 곳 0">
+          <span class="chip__heart" aria-hidden="true">♡</span><span id="favChipLabel">찜한 곳</span><span class="chip__n" id="favCount">0</span>
+        </button>
         <button id="filterToggle" class="btn btn--ghost" type="button" aria-expanded="false" aria-controls="filters">
           <span id="filterToggleLabel">필터</span><span class="btn__badge" id="filterBadge" hidden>0</span>
         </button>
@@ -115,7 +118,9 @@
 
 <script src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=5319f5b0184334165a52b3413de7b6d8&libraries=clusterer&autoload=false" onerror="window.__kakaoFailed=true"></script>
 <script src="vendor/leaflet/leaflet.js"></script>
-<script src="data/places.js?v=20261126b"></script>
-<script src="assets/app.js?v=20261126b"></script>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="data/places.js?v=20261126c"></script>
+<script src="assets/app.js?v=20261126c"></script>
 </body>
 </html>
