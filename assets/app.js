@@ -733,7 +733,7 @@
       }
       tags.push('<span class="tag tag--' + p.cost + '">' + esc(costLabel(p.cost)) + "</span>");
       tags.push('<span class="tag tag--theme">' + esc(themeText(p)) + "</span>");
-      var dist = state.sortPop ? "" : distanceKm(p);
+      var dist = state.sortPop ? null : distanceKm(p);
       var distHtml = dist == null ? "" : '<span class="card__dist">📍 ' + esc(distText(dist)) + "</span>";
       if (state.sortPop) distHtml += '<span class="card__dist card__pop">🔥 ' + esc(t().popRank(i + 1)) + "</span>";
       (p.tags || []).slice(0, 2).forEach(function (tg) {
