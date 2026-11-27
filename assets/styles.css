@@ -421,6 +421,10 @@ button, input { font-family: inherit; }
   margin-top: 8px;
 }
 
+/* 버튼 글자가 세로로 찌그러지지 않게 — 줄어들지 않고 필요한 만큼만 차지한다 */
+.panel__row > .chip,
+.panel__row > .btn { flex: 0 0 auto; }
+
 .btn {
   display: inline-flex;
   align-items: center;
@@ -1362,4 +1366,42 @@ body.view-map .mapwrap { display: block; }
   margin-top: 2px;
   font-size: 11.5px;
   color: var(--muted);
+}
+
+/* ─────────── 8단계: 인기순 정렬 · 대형카페 테마 ─────────── */
+.chip--pop {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 6px 10px 6px 9px;
+}
+
+.chip--pop.is-active {
+  background: #b4582f;
+  border-color: #b4582f;
+  color: #fff;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, .25) inset;
+}
+
+.chip--theme[data-value="cafe"] { --dot: #b4582f; }
+
+.card__pop {
+  color: #b4582f;
+  font-variant-numeric: tabular-nums;
+}
+
+.tag--pop {
+  background: #fbeee7;
+  border-color: #eed3c4;
+  color: #a2502c;
+  font-weight: 800;
+}
+
+@media (max-width: 879px) {
+  /* 모바일: 찜 라벨·중복 카운트를 줄여 정렬 버튼까지 한 줄에 넣는다 */
+  #favChipLabel { display: none; }
+  .panel__row .count { display: none; }
+  #favChip { padding: 6px 9px; }
+  .chip--pop, .chip--near { padding: 6px 9px; gap: 3px; }
+  #resetBtn { padding-left: 6px; padding-right: 6px; }
 }

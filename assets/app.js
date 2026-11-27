@@ -3,7 +3,7 @@
   "use strict";
 
   var PLACES = window.RKM_PLACES || [];
-  var DATA_DATE = "2026-11-26";
+  var DATA_DATE = "2026-11-27";
 
   /* ─────────── 문구 ─────────── */
   var T = {
@@ -19,6 +19,10 @@
       nearRetry: "현재 위치로 다시",
       nearOriginPrefix: "기준",
       nearOff: "거리순 끄기",
+      popBtn: "인기순",
+      popTitle: "인기·화제성 순으로 보기",
+      popOff: "인기순 끄기",
+      popRank: function (n) { return "인기 " + n + "위"; },
       distAway: "약 ",
       seasonLabel: "행사 기간",
       seasonOngoing: "진행 중",
@@ -55,7 +59,7 @@
       ages: [["all", "전체"], ["infant", "0~2세 영아"], ["toddler", "3~5세 유아"], ["kid", "6세+·초등"]],
       themes: [["all", "전체"], ["activity", "액티비티·놀이"], ["animal", "동물·바다·식물"],
                ["experience", "체험·만들기"], ["museum", "박물관·전시"], ["library", "도서관·북카페"],
-               ["season", "시즌·팝업·행사"]],
+               ["season", "시즌·팝업·행사"], ["cafe", "☕ 대형카페·휴식"]],
       costs: [["all", "전체"], ["free", "무료"], ["low", "1만원 이하"], ["high", "유료 (1만원 초과)"]],
       tags: [["rain", "주차 직통·우천편리"], ["reserve", "사전예약 필수"], ["baby", "수유실·기저귀"], ["stroller", "유모차 편함"], ["hidden", "숨은 명소"]],
       hours: "운영시간", closed: "휴관일", fee: "입장료", reserve: "예약", parking: "주차",
@@ -93,6 +97,10 @@
       nearRetry: "現在地で再試行",
       nearOriginPrefix: "基準",
       nearOff: "近い順をオフ",
+      popBtn: "人気順",
+      popTitle: "人気・話題性の高い順に並べる",
+      popOff: "人気順をオフ",
+      popRank: function (n) { return "人気" + n + "位"; },
       distAway: "約",
       seasonLabel: "開催期間",
       seasonOngoing: "開催中",
@@ -132,7 +140,7 @@
       ages: [["all", "すべて"], ["infant", "0〜2歳"], ["toddler", "3〜5歳"], ["kid", "6歳以上（小学生）"]],
       themes: [["all", "すべて"], ["activity", "アクティビティ・遊び"], ["animal", "動物・海・植物"],
                ["experience", "体験・工作"], ["museum", "博物館・展示"], ["library", "図書館・ブックカフェ"],
-               ["season", "シーズン・ポップアップ・イベント"]],
+               ["season", "シーズン・ポップアップ・イベント"], ["cafe", "☕ 大型カフェ・休憩"]],
       costs: [["all", "すべて"], ["free", "無料"], ["low", "1万ウォン以下"], ["high", "有料（1万ウォン超）"]],
       tags: [["rain", "駐車場直結・雨に便利"], ["reserve", "事前予約必須"], ["baby", "授乳室・おむつ"], ["stroller", "ベビーカー快適"], ["hidden", "穴場"]],
       hours: "営業時間", closed: "休館日", fee: "料金", reserve: "予約", parking: "駐車場",
@@ -178,6 +186,7 @@
     selected: null,
     view: "list",
     sortNear: false,       /* 가까운 순 정렬 */
+    sortPop: false,        /* 인기순 정렬 */
     origin: null           /* {lat, lng, key} 거리 기준점 */
   };
 
@@ -320,6 +329,8 @@
   }
 
   function useLocation() {
+    state.sortPop = false;
+    renderSortUI();
     nearPanelOpen = true;
     var note = $("nearNote");
     if (note) note.textContent = t().nearLoading;
@@ -328,6 +339,7 @@
     navigator.geolocation.getCurrentPosition(function (pos) {
       nearPanelOpen = false;
       state.sortNear = true;
+      state.sortPop = false;
       setOrigin("here", pos.coords.latitude, pos.coords.longitude);
     }, function () { nearFail(); }, { enableHighAccuracy: false, timeout: 8000, maximumAge: 600000 });
   }
@@ -337,16 +349,63 @@
       state.sortNear = false;
       nearPanelOpen = false;
       renderNearUI();
+      renderSortUI();
       render(true);
       return;
     }
     if (state.origin) {
       state.sortNear = true;
+      state.sortPop = false;
       renderNearUI();
+      renderSortUI();
       render(true);
       return;
     }
+    state.sortPop = false;      /* 거리순을 고르면 인기순은 바로 끈다 */
+    renderSortUI();
     useLocation();
+  }
+
+  /* ─────────── 인기순 정렬 ─────────── */
+  var POP_SORTED = null;
+
+  function popCompare(a, b) {
+    var pa = a.popularity || 0, pb = b.popularity || 0;
+    if (pa !== pb) return pb - pa;
+    var c = String(a.name.ko).localeCompare(String(b.name.ko), "ko");
+    if (c !== 0) return c;
+    return a.id < b.id ? -1 : (a.id > b.id ? 1 : 0);
+  }
+
+  function popRank(id) {
+    if (!POP_SORTED) POP_SORTED = PLACES.slice().sort(popCompare);
+    for (var i = 0; i < POP_SORTED.length; i++) if (POP_SORTED[i].id === id) return i + 1;
+    return 0;
+  }
+
+  function renderSortUI() {
+    var btn = $("popBtn");
+    if (!btn) return;
+    btn.classList.toggle("is-active", state.sortPop);
+    btn.setAttribute("aria-pressed", state.sortPop ? "true" : "false");
+    btn.setAttribute("title", state.sortPop ? t().popOff : t().popTitle);
+    var lab = $("popBtnLabel");
+    if (lab) lab.textContent = t().popBtn;
+  }
+
+  function togglePop() {
+    if (state.sortPop) {
+      state.sortPop = false;
+      renderSortUI();
+      render(true);
+      return;
+    }
+    state.sortPop = true;
+    state.sortNear = false;      /* 인기순과 거리순은 함께 쓰지 않는다 */
+    nearPanelOpen = false;
+    renderNearUI();
+    renderSortUI();
+    render(true);
   }
 
   /* ─────────── 유틸 ─────────── */
@@ -538,7 +597,9 @@
 
   function visiblePlaces() {
     var list = PLACES.filter(matches);
-    if (state.sortNear && state.origin) {
+    if (state.sortPop) {
+      list = list.slice().sort(popCompare);
+    } else if (state.sortNear && state.origin) {
       list = list.slice().sort(function (a, b) {
         var da = distanceKm(a), db = distanceKm(b);
         if (da == null || db == null) return 0;
@@ -672,8 +733,9 @@
       }
       tags.push('<span class="tag tag--' + p.cost + '">' + esc(costLabel(p.cost)) + "</span>");
       tags.push('<span class="tag tag--theme">' + esc(themeText(p)) + "</span>");
-      var dist = distanceKm(p);
+      var dist = state.sortPop ? "" : distanceKm(p);
       var distHtml = dist == null ? "" : '<span class="card__dist">📍 ' + esc(distText(dist)) + "</span>";
+      if (state.sortPop) distHtml += '<span class="card__dist card__pop">🔥 ' + esc(t().popRank(i + 1)) + "</span>";
       (p.tags || []).slice(0, 2).forEach(function (tg) {
         tags.push('<span class="tag">' + esc(tagLabel(tg)) + "</span>");
       });
@@ -1215,6 +1277,7 @@
     $("tabList").textContent = t().list;
     $("tabMap").textContent = t().map;
     renderNearUI();
+    renderSortUI();
     $("updatedNote").textContent = t().updatedNote;
     $("coordNote").textContent = t().coordNote;
     $("modalClose").setAttribute("aria-label", t().close);
@@ -1279,6 +1342,7 @@
     if (closed) pills.push('<span class="tag tag--closed">' + esc(tr.closedToday) + "</span>");
     pills.push('<span class="tag">' + esc(costLabel(p.cost)) + "</span>");
     pills.push('<span class="tag tag--theme">' + esc(themeText(p)) + "</span>");
+    pills.push('<span class="tag tag--pop">🔥 ' + esc(tr.popRank(popRank(p.id))) + "</span>");
     (p.tags || []).forEach(function (tg) {
       pills.push('<span class="tag">' + esc(tagLabel(tg)) + "</span>");
     });
@@ -1525,6 +1589,7 @@
     $("resetBtn").addEventListener("click", function () {
       state.region = "all"; state.theme = "all"; state.age = "all"; state.cost = "all";
       state.tags = []; state.q = ""; state.todayOnly = false; state.favOnly = false;
+      state.sortPop = false;
       nearPanelOpen = false;
       $("searchInput").value = "";
       $("searchClear").hidden = true;
@@ -1540,6 +1605,7 @@
     });
 
     $("nearBtn").addEventListener("click", toggleNear);
+    $("popBtn").addEventListener("click", togglePop);
     Array.prototype.forEach.call(document.querySelectorAll("#nearPanel [data-origin]"), function (b) {
       b.addEventListener("click", function () {
         var k = b.getAttribute("data-origin");
@@ -1548,6 +1614,7 @@
         if (!o) return;
         nearPanelOpen = false;
         state.sortNear = true;
+        state.sortPop = false;
         setOrigin(k, o.lat, o.lng);
       });
     });
