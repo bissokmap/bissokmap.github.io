@@ -1401,7 +1401,10 @@ body.view-map .mapwrap { display: block; }
   /* 모바일: 찜 라벨·중복 카운트를 줄여 정렬 버튼까지 한 줄에 넣는다 */
   #favChipLabel { display: none; }
   .panel__row .count { display: none; }
-  #favChip { padding: 6px 9px; }
-  .chip--pop, .chip--near { padding: 6px 9px; gap: 3px; }
-  #resetBtn { padding-left: 6px; padding-right: 6px; }
+  .panel__row { gap: 6px; flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; }
+  .panel__row::-webkit-scrollbar { display: none; }
+  #favChip { padding: 5px 8px; }
+  .chip--pop, .chip--near { padding: 5px 8px; gap: 3px; }
+  #filterToggle { padding-left: 8px; padding-right: 8px; }
+  #resetBtn { padding-left: 5px; padding-right: 5px; }
 }
