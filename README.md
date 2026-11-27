@@ -231,11 +231,19 @@ work/rainy-kids-map/
 - **스몹(스포츠몬스터) 하남**은 영업 중이지만 **키 120cm 미만 입장 불가**라 영유아 동반 앱 성격에 맞지 않아 넣지 않았습니다.
 - 운영시간·요금·휴관일은 공식 홈페이지·서울시 관광정보·한국관광공사 자료로 대조했고, 확인되지 않은 편의시설은 "확인되지 않음"으로 적었습니다(추정 금지).
 
+### PDF 가이드 재빌드 (2026-11-27)
+
+- `work/bissokmap-pdf/build.py` 로 `bissokmap-rainy-guide-2026.pdf` **20쪽**을 다시 만들었습니다(표지·들어가며 + 코스 5 + 베스트 3 + 준비물 + 시즌 + 권역 요약표 7장 + 마무리).
+- 152곳으로 늘어난 만큼 권역 요약표를 5장에서 7장으로 나눴고(인천 A/B, 서울 3장, 경기 2장), 페이지 넘침 0을 확인했습니다.
+- 리틀리(`litt.ly/bissokmap`) 페이지는 손대지 않았습니다.
+
 ### 8단계 검증 (Playwright, 2026-11-27)
 
-- `verify-pop.py` **41/41** — 인기순 내림차순·동점 순서 고정·카드/모달 순위 배지, 대형카페 16곳, 검색·찜·테마와 함께 작동, 인기순↔거리순 상호 배타, 초기화, 모바일 한 줄 정렬 바, 일본어 `人気順`·`大型カフェ・休憩`, 콘솔 에러 0건.
-- 회귀: `verify.py` **126/126**, `verify-theme.py` **27/27**, `verify-fav.py` **34/34**, `verify-stage6.py` **34/34** — 전부 콘솔 에러 0건, 카드·마커 **152곳**.
-- 스크린샷: `shots/15-pop-desktop.png`, `shots/15-pop-mobile.png`, `shots/15-pop-ja-mobile.png`, `shots/16-cafe-desktop.png`, `shots/16-cafe-mobile.png`.
+- `verify-pop.py` **42/42** — 인기순 내림차순·동점 순서 고정·카드/모달 순위 배지, 대형카페 16곳, 검색·찜·테마와 함께 작동, 인기순↔거리순 상호 배타, 초기화, 모바일 한 줄 정렬 바, 일본어 `人気順`·`大型カフェ・休憩`, 콘솔 에러 0건.
+- 회귀: `verify.py` **126/126**, `verify-theme.py` **27/27**, `verify-fav.py` **34/34**, `verify-stage6.py` **34/34** — 전부 콘솔 에러 0건, 카드·마커 **152곳**. 합계 **263개 검사 실패 0건**.
+- 스크린샷(로컬): `shots/15-pop-desktop.png`, `shots/15-pop-mobile.png`, `shots/15-pop-ja-mobile.png`, `shots/16-cafe-desktop.png`, `shots/16-cafe-mobile.png`
+- 스크린샷(라이브 2026-11-27): `shots/20-live-pop-desktop.png`, `shots/21-live-pop-modal-desktop.png`, `shots/22-live-cafe-desktop.png`, `shots/23-live-newcafe-modal-desktop.png`, `shots/24-live-pop-mobile.png`, `shots/25-live-cafe-mobile.png`, `shots/26-live-pop-ja-mobile.png`
+- 인기순 정렬은 기본(권역순)을 바꾸지 않고, 누를 때만 적용됩니다. 인기순에서는 거리 배지를 숨기고 `🔥 인기 N위`만 보여 줍니다.
 - 실행: `./run_verify.sh verify-pop.py` (라이브는 `./run_verify.sh verify-pop.py live`)
 
 ## 5단계 · 놀거리·체험 18곳 + 테마 필터 (2026-11-26)
